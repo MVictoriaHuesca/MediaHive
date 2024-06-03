@@ -10,7 +10,6 @@
     background-color: hsl(196, 12%, 18%);
     flex-grow: 1;
     height: 100vh;
-    /*margin-top: 10px;*/
 }
 
 #barraLateral .nav-link.active {
