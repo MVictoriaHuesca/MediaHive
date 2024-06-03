@@ -1,0 +1,52 @@
+
+#inicioSesioncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container-iniciosesion {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-container-iniciosesion h1 {
+    text-align: center;
+}
+
+.form-container-iniciosesion form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container-iniciosesion label {
+    margin-bottom: 5px;
+    margin-right: 20px; /* Añade un poco de margen a la derecha */
+}
+
+.form-container-iniciosesion input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.form-container-iniciosesion button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container-iniciosesion button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+}

@@ -1,0 +1,36 @@
+.cuadro-texto {
+    background-color:rgba(92, 107, 110, .5);
+    border-radius: 44px;
+    margin: 60px auto;
+    width: 80vw;
+    height: 50vh;
+    text-align: center;
+    border: black 3px;
+}
+
+.cuadro-texto h2 {
+    color: white;
+    font-family: 'livvic';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.cuadro-texto p {
+    color: white;
+    font-family: 'livvic';
+    font-size: 32px;
+}
+
+.crear-cuenta {
+    margin: 100px 660px;
+    width: 50%;
+    height: 50%;
+}
+
+.boton-crear-cuenta {
+    background-color: #5D787D;
+    border-radius: 15px;
+    color: white;
+    padding:12px;
+    border: none;
+}

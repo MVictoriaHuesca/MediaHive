@@ -1,0 +1,47 @@
+/* Biblioteca.css */
+
+.biblioteca-container {
+    margin-top: 4.8rem;
+    margin-left: 6.2rem;
+    height: calc(100% - 4.8rem);
+    /*background-color: #E3E9EA;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: black; /* Asegúrate de que el color del texto se destaca con el contorno */
+    
+}
+
+.carousel-container {
+    position: relative;
+    width: 95%;
+    overflow: hidden; /* Evita que los botones se desborden fuera del contenedor */
+}
+
+/* Estilos para los botones de navegación */
+.carousel-control {
+    width: 0%;
+}
+
+/* Estilos para el botón de retroceso */
+.carousel-control-prev {
+    filter: invert(100%);
+    width: 40px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+/* Estilos para el botón de avance */
+.carousel-control-next {
+    filter: invert(100%);
+    width: 40px;
+    margin-right: -0px;
+    margin-top: -50px;
+}

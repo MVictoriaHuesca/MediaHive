@@ -1,0 +1,58 @@
+#peliculas {
+  margin-top: 4.8rem;
+  margin-left: 6.2rem;
+  /*background-color: #E3E9EA;*/
+  z-index: -1;
+}
+
+#peliculas img {
+  border-radius: 5px; /* Ajusta este valor para cambiar el grado de redondeo de los bordes */
+  border: 1px solid #333; /* Añade un borde más grueso y de un color oscuro */
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); /* Añade una sombra para darle profundidad */
+}
+
+#peliculas img:hover {
+  transform: scale(1.1); /* Ajusta este valor para cambiar el grado de aumento */
+}
+
+.carousel-container {
+  position: relative;
+  width: 95%;
+  overflow: hidden; /* Evita que los botones se desborden fuera del contenedor */
+}
+
+/* Estilos para los botones de navegación */
+.carousel-control{
+  width: 0%;
+  
+}
+
+/* Estilos para el botón de retroceso */
+.carousel-control-prev {
+  filter: invert(100%);
+  width: 40px;
+  margin-left: -50px;
+}
+
+/* Estilos para el botón de avance */
+.carousel-control-next {
+  filter: invert(100%);
+  width: 40px;
+  margin-right: -50px;
+}
+
+#estrenos h2 {
+  margin-left: 0; /* Elimina el margen izquierdo */
+}
+
+#populares h2 {
+  margin-left: 0; /* Elimina el margen izquierdo */
+}
+
+#top10 h2 {
+  margin-left: 0; /* Elimina el margen izquierdo */
+}
+
+#guardadas h2 {
+  margin-left: 0; /* Elimina el margen izquierdo */
+}

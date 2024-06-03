@@ -1,0 +1,66 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/src/images/fondo-principal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cuadro-texto {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding: 10px;
+    width: 70vw; 
+    height: auto;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+    background-color:rgba(92, 107, 110, .7);
+    border-radius: 45px;
+    border: black 3px;
+    color: white;
+
+    font-family: 'livvic';
+    font-size: 1.5vw;
+    line-height: 1.9;
+}
+
+.cuadro-texto h2 {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.cuadro-texto p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.boton-crear-cuenta {
+    margin-left: 45vw;
+    margin-top: 100px;
+    width: 10vw;
+    height: 50vh;
+    background-color: #5d787d;
+    border-radius: 15px;
+    color: white;
+    padding:12px;
+    border: black 3px;
+}
+
+.button:hover {
+    background-color: #50656a;
+    color: black;
+}
+
+.contenido {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegúrate de que el contenido centrado esté detrás de las barras */
+}
