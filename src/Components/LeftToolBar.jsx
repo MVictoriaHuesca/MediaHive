@@ -21,7 +21,7 @@ function LeftToolBar() {
     <div class="parent-container-leftnav">
       <div id="leftnav" className="d-flex flex-column">
         {/* Barra lateral */}
-        <ul id="barraLateral" className="nav nav-flush flex-column mb-auto text-center">
+        <ul id="barraLateral" className="nav nav-flush flex-column mb-auto text-center" style={{paddingTop: '30px'}}>
           {/* Elemento de la barra lateral: Home */}
           <Link to="/inicio">
             {/*Cuando el usuario clica en "Home", el contenedor queda marcado y cambia el titulo de la barra de navegación superior*/}
