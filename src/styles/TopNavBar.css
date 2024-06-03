@@ -1,8 +1,8 @@
-
 .container-topnav {
     position: fixed;
-    width: 100%; 
+    width: 100%; /* Establece el ancho al 100% */
     z-index: 100;
+    height: 20px;
     height: 19px;
 }
 
@@ -11,33 +11,28 @@
     margin-left: 15px;
     margin-right: 15px;
 }
-
 .navbar {
     background-color: #283033;
     display: flex;
     align-items: center;
     
 }
-
 .imagen {
     margin-left: 2vh;
     width: 7vh;
     height: 7vh;
 }
-
 .nombre {
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     color: white;
     flex-grow: 1;
 }
-
 .tituloPagina{
     margin-top: 0.4rem;
     color: white;
     flex-grow: 1;
 }
-
 .registro {
     font-size: 23px;
     background-color: #67e1f9;
@@ -48,11 +43,9 @@
     margin-right: 10px;
     border-radius: 5px;
 }
-
 .registro:hover {
     background-color: #06acd4;
 }
-
 .inicioSesion {
     font-size: 23px;
     background-color: #0e6e90;
@@ -60,45 +53,35 @@
     border: solid 1.5px #164a63;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 5px; 
+    border-radius: 5px; /* Añade un poco de redondez al botón */
 }
-
 .inicioSesion:hover {
-    background-color: #164a63; 
+    background-color: #164a63; /* Cambia el color de fondo al pasar el cursor */
 }
-
 .username {
     color: white;
-    margin-right: 1rem; 
+    margin-right: 1rem; /* Ajusta el margen a tu preferencia */
 }
-
-
-
 .h2-topnav {
     margin-top: 0.5rem;
     color: white;
     box-shadow: #283033;
 }
-
 .usuario-container-topnav{
     margin-right: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
-
 .username-topnav {
     display: flex;
     color:white;
     font-size: 2vh;
 }
-
 .imagenPerfil-topnav {
     width: 6.5vh;
     height: 6.5vh;
     border-radius: 10px;
     border: 1px solid white;
 }
-

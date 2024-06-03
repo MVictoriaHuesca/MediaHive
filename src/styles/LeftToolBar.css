@@ -1,7 +1,7 @@
-
 .parent-container-leftnav {
     position: fixed;
     z-index: 100;
+    margin-top: 6.5rem;
     margin-top: 5.5rem;
     width: 6.3rem;
 }
@@ -11,43 +11,34 @@
     flex-grow: 1;
     height: 100vh;
 }
-
 #barraLateral .nav-link.active {
-    background-color: #5DADE2; 
+    background-color: #5DADE2; /* Color de fondo cuando está activo */
     border-bottom: black;
     border-color: black;
-    color: black; 
+    color: black; /* Color de texto cuando está activo */
     width: 6.3rem;
 }
-
 .HomeIcon{
     color: white;
 }
-
 .AudiotrackIcon{
     color: white;
 }
-
 .MovieIcon{
     color: white;
 }
-
 .SlideshowIcon{
     color: white;
 }
-
 .HiveIcon{
     color: white;
 }
-
 .HelpOutlineIcon{
     color: white;
 }
-
 span{
     color: white;
 }
-
 li:hover .HomeIcon,
 li:hover .AudiotrackIcon,
 li:hover .MovieIcon,
@@ -56,14 +47,11 @@ li:hover .HiveIcon,
 li:hover .HelpOutlineIcon,
 li:hover span{
     color:  #a1a0a0;
-    transition: background-color 0.3s, color 0.3s; 
+    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave */
 }
-
-
 .HelpOutlineIcon {
-    margin-top: 10px; 
+    margin-top: 10px; /* Ajusta este valor según lo necesites */
 }
-
 #seccionInicio,
 #seccionMusica,
 #seccionPeliculas,
@@ -77,6 +65,3 @@ li:hover span{
     overflow: hidden;
     outline: none;
 }
-
-
-
