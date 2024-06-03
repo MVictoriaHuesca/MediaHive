@@ -78,12 +78,11 @@ li:hover span{
     outline: none;
 }
 */
-
 .parent-container-leftnav {
     position: fixed;
     z-index: 100;
-    margin-top: 5.5rem; /* Ajusta el margen superior según tus necesidades */
-    width: 6.3rem;
+    margin-top: 5%; /* Ajusta la altura del margen superior para la barra lateral */
+    width: 6%; /* Ajusta el ancho de la barra lateral */
 }
 
 #barraLateral {
@@ -95,7 +94,7 @@ li:hover span{
 #barraLateral .nav-link.active {
     background-color: #5DADE2;
     color: black;
-    width: 6.3rem;
+    width: 100%; /* Ajusta el ancho de los elementos activos */
 }
 
 .HomeIcon,
@@ -103,10 +102,7 @@ li:hover span{
 .MovieIcon,
 .SlideshowIcon,
 .HiveIcon,
-.HelpOutlineIcon {
-    color: white;
-}
-
+.HelpOutlineIcon,
 span {
     color: white;
 }
@@ -119,11 +115,11 @@ li:hover .HiveIcon,
 li:hover .HelpOutlineIcon,
 li:hover span {
     color: #a1a0a0;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave */
 }
 
 .HelpOutlineIcon {
-    margin-top: 10px;
+    margin-top: 10px; /* Ajusta este valor según lo necesites */
 }
 
 #seccionInicio,
@@ -140,16 +136,15 @@ li:hover span {
     outline: none;
 }
 
+/* Media Query para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
     .parent-container-leftnav {
-        margin-top: 4rem; /* Ajusta el margen superior para dispositivos más pequeños */
-    }
-
-    #barraLateral {
-        width: 4rem; /* Ajusta el ancho de la barra lateral para dispositivos más pequeños */
+        margin-top: 3%; /* Ajusta la altura del margen superior para la barra lateral en dispositivos más pequeños */
+        width: 4%; /* Ajusta el ancho de la barra lateral para dispositivos más pequeños */
     }
 
     #barraLateral .nav-link.active {
-        width: 4rem;
+        width: 100%; /* Ajusta el ancho de los elementos activos para dispositivos más pequeños */
     }
 }
+

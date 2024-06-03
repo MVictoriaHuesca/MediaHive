@@ -103,73 +103,71 @@
     border: 1px solid white;
 }
 */
-
 .container-topnav {
     position: fixed;
     width: 100%;
     z-index: 100;
-    height: auto; /* Cambia la altura a auto para que se adapte al contenido */
+    height: 5%; /* Ajusta la altura de la barra superior */
 }
 
 .navbar {
     background-color: #283033;
     display: flex;
     align-items: center;
-    padding: 10px; /* Añade un poco de espacio alrededor del contenido */
+    padding: 10px;
 }
 
 .imagen {
-    margin-left: 2%; /* Utiliza porcentaje en lugar de vh */
-    width: 7%; /* Utiliza porcentaje en lugar de vh */
-    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    margin-left: 2%;
+    width: 7%;
+    height: auto;
 }
 
 .nombre {
-    margin-left: 2%; /* Utiliza porcentaje en lugar de rem */
+    margin-left: 2%;
     color: white;
     flex-grow: 1;
 }
 
 .tituloPagina {
-    margin-right: 2%; /* Utiliza porcentaje en lugar de rem */
+    margin-right: 2%;
     color: white;
     flex-grow: 1;
 }
 
 .registro,
-.inicioSesion {
-    font-size: 1.5vw; /* Utiliza unidades relativas */
+.inicioSesion,
+.username-topnav {
+    font-size: 1.5vw;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    margin-right: 1%; /* Utiliza porcentaje en lugar de rem */
-}
-
-.username-topnav {
-    font-size: 1.5vw; /* Utiliza unidades relativas */
-    color: white;
-    margin-right: 1%; /* Utiliza porcentaje en lugar de rem */
+    margin-right: 1%;
 }
 
 .imagenPerfil-topnav {
-    width: 6.5vh; /* No cambia, pero puedes ajustar según tus necesidades */
-    height: 6.5vh; /* No cambia, pero puedes ajustar según tus necesidades */
+    width: 6.5vh;
+    height: 6.5vh;
     border-radius: 10px;
     border: 1px solid white;
 }
 
+/* Media Query para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Cambia la dirección del flexbox para dispositivos pequeños */
-        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    .container-topnav {
+        height: 7%; /* Ajusta la altura de la barra superior para dispositivos más pequeños */
     }
-    
+
+    .navbar {
+        padding: 5px; /* Ajusta el padding de la barra superior para dispositivos más pequeños */
+    }
+
     .imagen,
     .nombre,
     .tituloPagina,
     .registro,
     .inicioSesion,
     .username-topnav {
-        margin: 5px; /* Reduce el margen entre elementos */
-        font-size: 1.2vw; /* Reduce el tamaño de fuente en dispositivos pequeños */
+        margin: 3px; /* Ajusta el margen entre elementos para dispositivos más pequeños */
+        font-size: 1.2vw; /* Reduce el tamaño de fuente para dispositivos más pequeños */
     }
 }
