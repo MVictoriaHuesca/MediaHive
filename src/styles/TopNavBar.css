@@ -1,6 +1,8 @@
+/*
+
 .container-topnav {
     position: fixed;
-    width: 100%; /* Establece el ancho al 100% */
+    width: 100%; 
     z-index: 100;
     height: 19px;
 }
@@ -59,16 +61,16 @@
     border: solid 1.5px #164a63;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 5px; /* Añade un poco de redondez al botón */
+    border-radius: 5px; 
 }
 
 .inicioSesion:hover {
-    background-color: #164a63; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #164a63; 
 }
 
 .username {
     color: white;
-    margin-right: 1rem; /* Ajusta el margen a tu preferencia */
+    margin-right: 1rem; 
 }
 
 
@@ -99,4 +101,75 @@
     height: 6.5vh;
     border-radius: 10px;
     border: 1px solid white;
+}
+*/
+
+.container-topnav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: auto; /* Cambia la altura a auto para que se adapte al contenido */
+}
+
+.navbar {
+    background-color: #283033;
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+.imagen {
+    margin-left: 2%; /* Utiliza porcentaje en lugar de vh */
+    width: 7%; /* Utiliza porcentaje en lugar de vh */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+}
+
+.nombre {
+    margin-left: 2%; /* Utiliza porcentaje en lugar de rem */
+    color: white;
+    flex-grow: 1;
+}
+
+.tituloPagina {
+    margin-right: 2%; /* Utiliza porcentaje en lugar de rem */
+    color: white;
+    flex-grow: 1;
+}
+
+.registro,
+.inicioSesion {
+    font-size: 1.5vw; /* Utiliza unidades relativas */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1%; /* Utiliza porcentaje en lugar de rem */
+}
+
+.username-topnav {
+    font-size: 1.5vw; /* Utiliza unidades relativas */
+    color: white;
+    margin-right: 1%; /* Utiliza porcentaje en lugar de rem */
+}
+
+.imagenPerfil-topnav {
+    width: 6.5vh; /* No cambia, pero puedes ajustar según tus necesidades */
+    height: 6.5vh; /* No cambia, pero puedes ajustar según tus necesidades */
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia la dirección del flexbox para dispositivos pequeños */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+    
+    .imagen,
+    .nombre,
+    .tituloPagina,
+    .registro,
+    .inicioSesion,
+    .username-topnav {
+        margin: 5px; /* Reduce el margen entre elementos */
+        font-size: 1.2vw; /* Reduce el tamaño de fuente en dispositivos pequeños */
+    }
 }

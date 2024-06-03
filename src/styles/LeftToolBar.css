@@ -1,3 +1,4 @@
+/*
 .parent-container-leftnav {
     position: fixed;
     z-index: 100;
@@ -12,10 +13,10 @@
 }
 
 #barraLateral .nav-link.active {
-    background-color: #5DADE2; /* Color de fondo cuando está activo */
+    background-color: #5DADE2; 
     border-bottom: black;
     border-color: black;
-    color: black; /* Color de texto cuando está activo */
+    color: black; 
     width: 6.3rem;
 }
 
@@ -55,12 +56,12 @@ li:hover .HiveIcon,
 li:hover .HelpOutlineIcon,
 li:hover span{
     color:  #a1a0a0;
-    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 
 .HelpOutlineIcon {
-    margin-top: 10px; /* Ajusta este valor según lo necesites */
+    margin-top: 10px; 
 }
 
 #seccionInicio,
@@ -75,4 +76,80 @@ li:hover span{
     cursor: pointer;
     overflow: hidden;
     outline: none;
+}
+*/
+
+.parent-container-leftnav {
+    position: fixed;
+    z-index: 100;
+    margin-top: 5.5rem; /* Ajusta el margen superior según tus necesidades */
+    width: 6.3rem;
+}
+
+#barraLateral {
+    background-color: hsl(196, 12%, 18%);
+    flex-grow: 1;
+    height: 100vh;
+}
+
+#barraLateral .nav-link.active {
+    background-color: #5DADE2;
+    color: black;
+    width: 6.3rem;
+}
+
+.HomeIcon,
+.AudiotrackIcon,
+.MovieIcon,
+.SlideshowIcon,
+.HiveIcon,
+.HelpOutlineIcon {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+li:hover .HomeIcon,
+li:hover .AudiotrackIcon,
+li:hover .MovieIcon,
+li:hover .SlideshowIcon,
+li:hover .HiveIcon,
+li:hover .HelpOutlineIcon,
+li:hover span {
+    color: #a1a0a0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.HelpOutlineIcon {
+    margin-top: 10px;
+}
+
+#seccionInicio,
+#seccionMusica,
+#seccionPeliculas,
+#seccionSeries,
+#seccionBiblioteca,
+#seccionAyuda {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .parent-container-leftnav {
+        margin-top: 4rem; /* Ajusta el margen superior para dispositivos más pequeños */
+    }
+
+    #barraLateral {
+        width: 4rem; /* Ajusta el ancho de la barra lateral para dispositivos más pequeños */
+    }
+
+    #barraLateral .nav-link.active {
+        width: 4rem;
+    }
 }
