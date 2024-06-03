@@ -1,4 +1,4 @@
-/*
+
 .parent-container-leftnav {
     position: fixed;
     z-index: 100;
@@ -77,74 +77,6 @@ li:hover span{
     overflow: hidden;
     outline: none;
 }
-*/
-.parent-container-leftnav {
-    position: fixed;
-    z-index: 100;
-    margin-top: 5%; /* Ajusta la altura del margen superior para la barra lateral */
-    width: 6%; /* Ajusta el ancho de la barra lateral */
-}
 
-#barraLateral {
-    background-color: hsl(196, 12%, 18%);
-    flex-grow: 1;
-    height: 100vh;
-}
 
-#barraLateral .nav-link.active {
-    background-color: #5DADE2;
-    color: black;
-    width: 100%; /* Ajusta el ancho de los elementos activos */
-}
-
-.HomeIcon,
-.AudiotrackIcon,
-.MovieIcon,
-.SlideshowIcon,
-.HiveIcon,
-.HelpOutlineIcon,
-span {
-    color: white;
-}
-
-li:hover .HomeIcon,
-li:hover .AudiotrackIcon,
-li:hover .MovieIcon,
-li:hover .SlideshowIcon,
-li:hover .HiveIcon,
-li:hover .HelpOutlineIcon,
-li:hover span {
-    color: #a1a0a0;
-    transition: background-color 0.3s, color 0.3s; /* Agrega transición suave */
-}
-
-.HelpOutlineIcon {
-    margin-top: 10px; /* Ajusta este valor según lo necesites */
-}
-
-#seccionInicio,
-#seccionMusica,
-#seccionPeliculas,
-#seccionSeries,
-#seccionBiblioteca,
-#seccionAyuda {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
-/* Media Query para dispositivos más pequeños */
-@media screen and (max-width: 768px) {
-    .parent-container-leftnav {
-        margin-top: 3%; /* Ajusta la altura del margen superior para la barra lateral en dispositivos más pequeños */
-        width: 4%; /* Ajusta el ancho de la barra lateral para dispositivos más pequeños */
-    }
-
-    #barraLateral .nav-link.active {
-        width: 100%; /* Ajusta el ancho de los elementos activos para dispositivos más pequeños */
-    }
-}
 

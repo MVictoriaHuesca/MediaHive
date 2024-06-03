@@ -1,4 +1,3 @@
-/*
 
 .container-topnav {
     position: fixed;
@@ -102,72 +101,4 @@
     border-radius: 10px;
     border: 1px solid white;
 }
-*/
-.container-topnav {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: 5%; /* Ajusta la altura de la barra superior */
-}
 
-.navbar {
-    background-color: #283033;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.imagen {
-    margin-left: 2%;
-    width: 7%;
-    height: auto;
-}
-
-.nombre {
-    margin-left: 2%;
-    color: white;
-    flex-grow: 1;
-}
-
-.tituloPagina {
-    margin-right: 2%;
-    color: white;
-    flex-grow: 1;
-}
-
-.registro,
-.inicioSesion,
-.username-topnav {
-    font-size: 1.5vw;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-right: 1%;
-}
-
-.imagenPerfil-topnav {
-    width: 6.5vh;
-    height: 6.5vh;
-    border-radius: 10px;
-    border: 1px solid white;
-}
-
-/* Media Query para dispositivos más pequeños */
-@media screen and (max-width: 768px) {
-    .container-topnav {
-        height: 7%; /* Ajusta la altura de la barra superior para dispositivos más pequeños */
-    }
-
-    .navbar {
-        padding: 5px; /* Ajusta el padding de la barra superior para dispositivos más pequeños */
-    }
-
-    .imagen,
-    .nombre,
-    .tituloPagina,
-    .registro,
-    .inicioSesion,
-    .username-topnav {
-        margin: 3px; /* Ajusta el margen entre elementos para dispositivos más pequeños */
-        font-size: 1.2vw; /* Reduce el tamaño de fuente para dispositivos más pequeños */
-    }
-}
