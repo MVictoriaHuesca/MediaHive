@@ -10,7 +10,7 @@
     background-color: hsl(196, 12%, 18%);
     flex-grow: 1;
     height: 100vh;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #barraLateral .nav-link.active {
@@ -19,7 +19,7 @@
     border-color: black;
     color: black; /* Color de texto cuando está activo */
     width: 6.3rem;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .HomeIcon{
