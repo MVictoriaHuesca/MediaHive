@@ -1,7 +1,7 @@
 
 .content-inicio {
   content: "";
-  background-image: url("../src/Images/fondo.png");
+  background-image: url("../Images/fondo.png");
   background-size: cover;
   background-position: center;
   height: calc(100% - 4.8rem);
