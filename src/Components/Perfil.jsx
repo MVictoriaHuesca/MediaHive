@@ -11,7 +11,6 @@ function Perfil() {
     const storedUsername = localStorage.getItem('username') || '';
     const storedProfileImage = localStorage.getItem('profileImage') || '';
     
-    const [nombreUsuarioTemp, setNombreUsuarioTemp] = useState(storedUsername);
     const [perfilURLTemp, setPerfilURLTemp] = useState(storedProfileImage);
 
     useEffect(() => {
@@ -22,6 +21,8 @@ function Perfil() {
         if (Object.keys(errors).length === 0) {
             localStorage.setItem('username', data.nombreUsuario);
             localStorage.setItem('profileImage', perfilURLTemp);
+            alert('Cambios guardados correctamente');
+            
             navigate(`/Inicio/${data.nombreUsuario}`);
         }
     });

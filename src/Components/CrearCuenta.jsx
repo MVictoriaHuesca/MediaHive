@@ -20,7 +20,7 @@ function CrearCuenta() {
         return alert('El correo electrónico ya está registrado');
       }
 
-      Users.push({username: data.nombreUsuario, email: data.correoElectronico, password: data.contrasena});
+      Users.push({username: data.nombreUsuario, email: data.correoElectronico, password: data.contrasena, profileImage: ''});
       localStorage.setItem('users', JSON.stringify(Users));
       alert('Usuario creado correctamente');
 

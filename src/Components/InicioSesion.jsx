@@ -40,24 +40,9 @@ const InicioSesion = () => {
             errors.password = <span className="error-message">Correo electrónico o contraseña incorrectos</span>;
         } else {
             localStorage.setItem('username', validUser.username);
+            localStorage.setItem('profileImage', '');
             navigate(`/Inicio/${validUser.username}`);
         }
-
-        /*
-        const credencialesSaved = localStorage.getItem("credencialesSaved");
-        if(credencialesSaved !== null){
-            const credencialesSavedJSON = JSON.parse(credencialesSaved);
-            for (let i = 0; i < credencialesSavedJSON.length; i++) {
-                const credenciales = credencialesSavedJSON[i];
-                if (values.email === credenciales[0] && values.password === credenciales[1]) {
-                    localStorage.setItem("username", values.email);
-                    navigate(`/Inicio/${data.nombreUsuario}`);
-                }
-            }
-            errors.email = <span className="error-message">Correo electrónico o contraseña incorrectos</span>;
-            errors.password = <span className="error-message">Correo electrónico o contraseña incorrectos</span>;
-        }
-        */
 
         if (!values.email) {
             errors.email = <span className="error-message">No puede estar en blanco</span>;
