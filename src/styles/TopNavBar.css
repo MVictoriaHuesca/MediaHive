@@ -1,7 +1,7 @@
 .container-topnav {
     position: fixed;
     width: 100%; /* Establece el ancho al 100% */
-    z-index: 100;
+    z-index: 1000;
     height: 20px;
     height: 19px;
 }

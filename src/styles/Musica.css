@@ -1,13 +1,14 @@
 .parent-container-resultadosmusica {
-  margin-top: 4.8rem;
+  margin-top: 3vh;
   margin-left: 6.3rem;
-  width: calc(100% - 6.3rem);
+  width: calc(100% - 6.8rem);
 
 }
 
 .pantalla{
-  margin-top: 13vh;
+  margin-top: 10vh;
   margin-left: 6.3rem;
+  width: calc(100% - 7.1rem);
   /*background-color: #E3E9EA;*/
 }
 

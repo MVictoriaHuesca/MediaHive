@@ -1,6 +1,6 @@
 .parent-container-leftnav {
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     margin-top: 6.5rem;
     margin-top: 5.5rem;
     width: 6.3rem;
@@ -11,13 +11,16 @@
     flex-grow: 1;
     height: 100vh;
 }
+
 #barraLateral .nav-link.active {
     background-color: #5DADE2; /* Color de fondo cuando está activo */
     border-bottom: black;
     border-color: black;
+    border-radius: 5px;
     color: black; /* Color de texto cuando está activo */
     width: 6.3rem;
 }
+
 .HomeIcon{
     color: white;
 }

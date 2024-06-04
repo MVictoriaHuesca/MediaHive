@@ -56,3 +56,7 @@
 #guardadas h2 {
   margin-left: 0; /* Elimina el margen izquierdo */
 }
+
+.formulario {
+  margin-top: 2vh;
+}
