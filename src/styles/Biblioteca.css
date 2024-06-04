@@ -1,5 +1,9 @@
 /* Biblioteca.css */
 
+.canciones{
+    height: 20vh;
+}
+
 .biblioteca-container {
     margin-top: 10vh;
     margin-left: 6.2rem;

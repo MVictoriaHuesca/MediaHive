@@ -143,7 +143,7 @@ return (
                         </Carousel>
                     </div>
 
-                    <h2>Series</h2>
+                    <h2 style={{ marginTop: '5vh' }}>Series</h2>
                     <div className="series">
                         <Carousel ref={carouselRef} interval={null} indicators={false}>
                             {
