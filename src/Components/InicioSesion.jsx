@@ -67,8 +67,9 @@ const InicioSesion = () => {
 
     return (
         <div className="container" id="inicioSesioncontainer">
+            <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'></link>
             <div className="form-container-iniciosesion">
-                <h1>Inicia sesión para continuar</h1>
+                <h1>Inicio de sesión</h1>
                 {Object.keys(formErrors).length === 0 && isSubmitting && (
                     <span>Formulario enviado con éxito</span>
                 )}

@@ -41,11 +41,15 @@
   width: 4vw;
 }
 
-.label-crear-cuenta {
+.label-crear-cuenta, .label-contraseña {
   margin-left: 0px;
   margin-bottom: 0.5vh;
   font-size: 2.5vh;
   color: black;
+}
+
+.label-crear-cuenta:first-child {
+  margin-top: 2.5vh;
 }
 
 .input-crear-cuenta {
@@ -65,7 +69,7 @@
   display: block;
   margin-top: 1.5vh;
   margin-inline: auto;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
 }
 
 .boton-aceptar:hover {
