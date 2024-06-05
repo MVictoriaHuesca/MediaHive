@@ -50,7 +50,7 @@ function CrearCuenta() {
               {...register("nombreUsuario", { 
                 required: {
                   value: true, 
-                  message: 'Nombre de usuario obligatorio'
+                  message: 'Este campo es obligatorio'
                 },
                 maxLength: {
                   value: 30,
@@ -73,7 +73,7 @@ function CrearCuenta() {
               {...register("correoElectronico", { 
                 required: {
                   value: true,
-                  message: 'Correo electrónico obligatorio'
+                  message: 'Este campo es obligatorio'
                 },
                 pattern: {
                   value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -96,7 +96,7 @@ function CrearCuenta() {
               {...register("contrasena", { 
                 required: {
                   value: true, 
-                  message: 'Contraseña obligatoria'
+                  message: 'Este campo es obligatorio'
                },
                minLength: {
                  value: 4,

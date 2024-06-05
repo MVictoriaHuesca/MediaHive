@@ -28,7 +28,6 @@
   align-items: flex-start;
 }
 
-
 .imagen-crear-cuenta {
   margin-top: 10px;
   margin-bottom: 2vh;
@@ -45,6 +44,7 @@
 
 .input-crear-cuenta {
   width: 24vw;
+  height: 4vh;
   margin-bottom: 0.5vh;
   border-radius: 5px;
   border: black 2px;
@@ -58,7 +58,7 @@
   border-radius: 10px;
   border: solid 1px #067509;
   display: block;
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   margin-inline: auto;
   margin-bottom: 0vh;
 }
