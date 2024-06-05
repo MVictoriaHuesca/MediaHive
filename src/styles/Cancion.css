@@ -1,58 +1,98 @@
-.parent-container-cancion{
+.parent-container-cancion {
   margin-top: 10vh;
   margin-left: 6.2rem;
+  overflow: hidden;
 }
 
 .MusicaContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-  }
-  
-  .Artista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0px;
-  }
-  
-  .Artista img{
-    width: 35%;
-    height: 50%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  #comentarios-cancion{
-    margin-right: 100vh;
-  }
-  .UserInputContainer {
-    width: 100%;
-    margin-top: 9%;
-   
-  }
-  
-  .CommentBox {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 1%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    word-wrap: break-word;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
 
-  .container-comentarios {
-    margin-left: 10vh;
-  }
+.Artista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+}
 
-  #comentarios-cancion {
-    margin-right: 10vh;
-  }
+.Artista img {
+  width: 35%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
-  #row-cancion{
-    margin-right: 0;
-  }
+#comentarios-cancion {
+  margin-right: 100vh;
+}
 
+.UserInputContainer {
+  width: 100%;
+  margin-top: 9%;
+
+}
+
+.CommentBox {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  word-wrap: break-word;
+}
+
+.container-comentarios {
+  margin-left: 10vh;
+}
+
+#comentarios-cancion {
+  margin-right: 10vh;
+}
+
+#row-cancion {
+  margin-right: 0;
+}
+
+.UserInputContainer {
+  margin-bottom: 1vh;
+}
+
+.registro-cancion {
+  font-size: 16px;
+  background-color: #67e1f9;
+  color: black;
+  border: solid 1.5px #06acd4;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.registro-cancion:hover {
+  background-color: #06acd4;
+}
+
+.inicioSesion-cancion {
+  font-size: 16px;
+  background-color: #0e6e90;
+  color: white;
+  border: solid 1.5px #164a63;
+  margin-left: 2vh;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  /* Añade un poco de redondez al botón */
+}
+
+.inicioSesion-cancion:hover {
+  background-color: #164a63;
+  /* Cambia el color de fondo al pasar el cursor */
+}
+
+.cerrar-cancion {
+  background-color: #5d777d;
+  color: white;
+  border-radius: 8px;
+}
