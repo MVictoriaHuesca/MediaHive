@@ -57,3 +57,20 @@
 .imagen-serie:hover {
   transform: scale(1.1); /* Ajusta este valor para cambiar el grado de aumento */
 }
+
+.boton-buscar-serie {
+
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #455559;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 4vh;
+  width: 7vh;
+}
+
+.boton-buscar-serie:hover {
+background-color: #3e494c;
+}

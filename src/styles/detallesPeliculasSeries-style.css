@@ -1,8 +1,8 @@
 
 #detallesPeliculas, #detallesSeries {
-    margin-top: 10vh;
+    margin-top: 9vh;
     margin-left: 6rem;
-    background-color: #E3E9EA;
+    height: 91vh;
 }
 
 #detallesPeliculas img, #detallesSeries img {
@@ -10,3 +10,10 @@
     border: 2px solid #333; /* Añade un borde más grueso y de un color oscuro */
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); /* Añade una sombra para darle profundidad */
 }
+
+.UserInputContainer {
+    margin-left: 0;
+}
+
+
+

@@ -56,6 +56,7 @@ a.carousel-control-next {
 }
 
 .boton-buscar-musica {
+
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -64,7 +65,7 @@ a.carousel-control-next {
     font-size: 16px;
     cursor: pointer;
     height: 4vh;
-    width: 10vh;
+    width: 7vh;
 }
 
 .boton-buscar-musica:hover {
@@ -72,7 +73,7 @@ a.carousel-control-next {
 }
 
 #barra-busqueda-musica{
-  margin-top: 2vh;
+  margin-top: 3vh;
   margin-bottom: 2vh;
 }
 

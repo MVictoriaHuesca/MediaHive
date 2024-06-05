@@ -146,19 +146,11 @@ function Series({ cambiarTituloPagina }) {
           marginRight: '10px',
           fontSize: '16px',
           outline: 'none',
+          width: '50%',
         }}
           placeholder="Buscar serie..."
         />
-        <button type="submit" alt={"Buscar Serie"} style={{
-          padding: '10px 20px',
-          borderRadius: '5px',
-          border: 'none',
-          backgroundColor: '#455559',
-          color: 'white',
-          fontSize: '16px',
-          cursor: 'pointer',
-          transition: 'background-color 0.3s',
-        }}
+        <button type="submit" alt={"Buscar Serie"} class="boton-buscar-serie"
         >Buscar</button>
       </form>
       <br />
