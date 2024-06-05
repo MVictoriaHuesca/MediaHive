@@ -41,7 +41,7 @@ function CrearCuenta() {
         <h1 style={{fontWeight: 'bold'}}>Crear cuenta nueva</h1>
           <form onSubmit={ onSubmit } className="form-container">
             <div class="info-crearcuenta">
-              <label htmlFor="nombreUsuario" className="label-crear-cuenta" style={{marginTop:'1.5vh'}}>Nombre de usuario</label>
+              <label htmlFor="nombreUsuario" className="label-crear-cuenta" style={{marginTop:'1.5vh', marginLeft:'-5px'}}>Nombre de usuario</label>
               <span class="info-crearcuenta">(Entre 4 y 30 caracteres)</span>
             </div>
             <input
