@@ -31,7 +31,7 @@ function Musica() {
     <div className="pantalla">
 
     <div className="row" >
-      <div id="barra de busqueda">
+      <div id="barra-busqueda-musica">
         <div className="col-md-12" tabIndex="0">
           <form onSubmit={handleSearch} className="formulario d-flex p-12"  style={{alignItems: 'center', justifyContent: 'center', marginTop: '10px'}}>
                   <input type="text" value={cancion} onChange={e => setCancion(e.target.value)} style={{
@@ -41,19 +41,11 @@ function Musica() {
                     marginRight: '10px',
                     fontSize: '16px',
                     outline: 'none',
+                    width: '50%'
                   }}
                   placeholder="Buscar canción..."
                   />
-                  <button type="submit" style={{
-                      padding: '5px',
-                      borderRadius: '5px',
-                      border: 'none',
-                      backgroundColor: '#455559',
-                      color: 'white',
-                      fontSize: '16px',
-                      cursor: 'pointer',
-                      transition: 'background-color 0.3s',
-                    }}
+                  <button type="submit" class="boton-buscar-musica"
                   >Buscar</button>
             </form>
         </div>
@@ -62,7 +54,7 @@ function Musica() {
 
     <div className="row">
       <div id="Ultimos estrenos" className="col-md-6 carousel-container mx-auto" aria-label='Últimos estrenos'>
-        <h3>Últimos estrenos</h3>
+        <h3 class="seccion-musica">Últimos estrenos</h3>
         <Carousel ref={carouselRef} interval={null} indicators={false}>
             <Carousel.Item>
               <div className="carousel-item-content row align-items-center py-2">
@@ -139,7 +131,7 @@ function Musica() {
 
     <div className="row">
       <div id="Mas populares" className="col-md-6 carousel-container mx-auto">
-        <h3>Más populares</h3>
+        <h3 class="seccion-musica">Más populares</h3>
         <Carousel ref={carouselRef} interval={null} indicators={false}>
             <Carousel.Item>
               <div className="carousel-item-content row align-items-center py-2">
@@ -217,7 +209,7 @@ function Musica() {
     
     <div className="row">
       <div id="Top 10 España" className="col-md-6 carousel-container mx-auto">
-        <h3>Top 10 España</h3>
+        <h3 class="seccion-musica">Top 10 España</h3>
         <Carousel ref={carouselRef} interval={null} indicators={false}>
             <Carousel.Item>
               <div className="carousel-item-content row align-items-center py-2">

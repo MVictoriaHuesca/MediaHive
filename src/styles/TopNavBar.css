@@ -19,8 +19,8 @@
 }
 .imagen {
     margin-left: 2vh;
-    width: 7vh;
-    height: 7vh;
+    width: 7.5vh;
+    height: 7.5vh;
 }
 .nombre {
     margin-top: 0.5rem;
@@ -80,8 +80,8 @@
     font-size: 2vh;
 }
 .imagenPerfil-topnav {
-    width: 6.5vh;
-    height: 6.5vh;
+    width: 5vh;
+    height: 5vh;
     border-radius: 10px;
     border: 1px solid white;
 }

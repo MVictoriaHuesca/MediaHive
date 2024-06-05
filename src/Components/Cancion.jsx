@@ -269,9 +269,9 @@ function Cancion(props) {
         </div>
       </div>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
+      <div className="container-comentarios">
+        <div className="row" id="row-cancion">
+          <div className="col-md-6" id="comentarios-cancion">
             <h4 className="CommentTitle">Comentarios:</h4>
             <div className="tabla">
               {comentariosAleatorios.map((comment, index) => (
@@ -284,7 +284,6 @@ function Cancion(props) {
               Ver más comentarios
             </Button>
           </div>
-          <div className="col-md-2"></div>
           <div className="col-md-4">
             <div className="UserInputContainer">
                 {/* Cuadro de texto para la opinión del usuario */}

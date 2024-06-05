@@ -1,8 +1,7 @@
 .parent-container-leftnav {
     position: fixed;
     z-index: 1000;
-    margin-top: 6.5rem;
-    margin-top: 5.5rem;
+    margin-top: 9vh;
     width: 6.3rem;
 }
 
