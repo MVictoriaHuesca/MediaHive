@@ -5,6 +5,12 @@
   overflow-y: auto;
 }
 
+.container-sugerencia{
+  margin-left: 3vh;
+  margin-top: 3vh;
+  height: 40vh;
+}
+
 .items {
     margin-top: 4.3rem;
     margin-bottom: 20px;
@@ -37,8 +43,4 @@
   }
   .mb-0 > a[aria-expanded="true"]:after {
     content: "\f077"; /* fa-chevron-up */
-  }
-
-  .items.accordion.accordion-flush {
-    
   }

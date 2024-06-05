@@ -81,33 +81,33 @@ function MyVerticallyCenteredModal(props) {
     return (
         <Modal
             {...props}
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    ¡Debes iniciar sesión para añadir un comentario!
+            <Modal.Header closeButton style={{ paddingBottom: '1vh' }}>
+
+                <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight: 'bold' }}>
+                    ¡Debes iniciar sesión para enviar una sugerencia!
                 </Modal.Title>
+
             </Modal.Header>
-            <Modal.Body>
-                <h4>Inicia sesión en tu cuenta o crea una nueva para añadir comentarios</h4>
-                <div>
-                    <h5>
-                        <Link to="/CrearCuenta">
-                            <Button className="registro-cancion" >Registrarse</Button>
-                        </Link>
-                    </h5>
-                    <h5>
-                        <Link to="/InicioSesion">
-                            <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
-                        </Link>
-                    </h5>
+            <Modal.Body style={{ paddingTop: '1vh' }}>
+                <p style={{ marginBottom: '2vh', }}>Inicia sesión o crea una cuenta nueva para enviar una sugerencia: </p>
+                <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                    <Link to="/CrearCuenta">
+                        <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
+                    </Link>
+                    <Link to="/InicioSesion">
+                        <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
+                    </Link>
                 </div>
             </Modal.Body>
-            <Modal.Footer>
-                <Button onClick={props.onHide}>Cerrar</Button>
+
+            <Modal.Footer style={{ padding: '0', height: '1px' }}>
+                ´{/*<Button onClick={props.onHide} class="cerrar-cancion">Cerrar</Button>*/}
             </Modal.Footer>
+
         </Modal>
     );
 }
@@ -144,7 +144,7 @@ function Ayuda() {
     const [show, setShow] = useState(false);
     const target = useRef(null);
 
-{/*------------------------------------------------QUIENES-SOMOS--------------------------------------------------------------- */ }
+    {/*------------------------------------------------QUIENES-SOMOS--------------------------------------------------------------- */ }
     return (
         <div class="container-menu">
             <Accordion defaultActiveKey="0" flush className="items">
@@ -164,7 +164,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------MUSICA--------------------------------------------------------------- */}
+                {/*------------------------------------------------MUSICA--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="2" className="musica">
                     <Accordion.Header>
@@ -359,7 +359,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------PELICULAS--------------------------------------------------------------- */}
+                {/*------------------------------------------------PELICULAS--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="3" className="peliculas">
                     <Accordion.Header>
@@ -552,7 +552,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------SERIES--------------------------------------------------------------- */}
+                {/*------------------------------------------------SERIES--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="4" className="series">
                     <Accordion.Header>
@@ -745,7 +745,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------BIBLIOTECA--------------------------------------------------------------- */}
+                {/*------------------------------------------------BIBLIOTECA--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="5" className="biblioteca">
                     <Accordion.Header>
@@ -798,7 +798,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------PERFIL--------------------------------------------------------------- */}
+                {/*------------------------------------------------PERFIL--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="6" className="perfil">
                     <Accordion.Header>
@@ -868,53 +868,47 @@ function Ayuda() {
                 </Accordion.Item>
             </Accordion>
 
-{/*------------------------------------------------SUGERENCIAS--------------------------------------------------------------- */}
+            {/*------------------------------------------------SUGERENCIAS--------------------------------------------------------------- */}
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-3">
-                        <span><br></br></span>
-                        <h2>¿Te gustaría enviarnos una sugerencia?</h2>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="UserInputContainer">
-                            {/* Cuadro de texto para la opinión del usuario */}
-                            <textarea
-                                placeholder="Escribe tu sugerencia aquí..."
-                                value={userComment}
-                                onChange={handleUserCommentChange}
-                                className="UserOpinion"
-                                style={{ width: '100%', height: '100px' }}
-                            />
-                            {/* Botón para añadir comentario */}
+            <div className="container-sugerencia">
 
-                        </div>
-                        {usuario ? (
-                            <>
-                                <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: 'blue', color: 'white' }} ref={target} onClick={() => { handleUserCommentSubmit(); setShow(!show) }}>
-                                    Enviar sugerencia
-                                </Button>
-                                <Overlay target={target.current} show={show} placement="right">
-                                    {(props) => (
-                                        <Tooltip id="overlay-example" {...props}>
-                                            ¡Gracias!
-                                        </Tooltip>
-                                    )}
-                                </Overlay>
-                            </>
-                        ) : (
-                            <>
-                                <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: 'blue', color: 'white' }} onClick={() => setModalShow(true)} >
-                                    Enviar sugerencia
-                                </Button>
-                                <MyVerticallyCenteredModal
-                                    show={modalShow}
-                                    onHide={() => setModalShow(false)}
-                                />
-                            </>
-                        )}
-                    </div>
+                <h2 style={{marginLeft: '2vh', marginTop: '12vh', marginBottom:'3vh'}}>¿Te gustaría enviarnos una sugerencia?</h2>
+                <div>
+                    {/* Cuadro de texto para la opinión del usuario */}
+                    <textarea
+                        placeholder="Escribe tu sugerencia aquí..."
+                        value={userComment}
+                        onChange={handleUserCommentChange}
+                        className="UserOpinion"
+                        style={{ width: '40%', height: '18vh', marginLeft: '2vh', marginBottom: '1.5vh'}}
+                    />
+                    {/* Botón para añadir comentario */}
+
                 </div>
+                {usuario ? (
+                    <>
+                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white', marginLeft:'2vh' }} ref={target} onClick={() => { handleUserCommentSubmit(); setShow(!show) }} >
+                            Enviar sugerencia
+                        </Button>
+                        <Overlay target={target.current} show={show} placement="right">
+                            {(props) => (
+                                <Tooltip id="overlay-example" {...props}>
+                                    ¡Gracias!
+                                </Tooltip>
+                            )}
+                        </Overlay>
+                    </>
+                ) : (
+                    <>
+                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white', marginLeft:'2vh' }} onClick={() => setModalShow(true)} >
+                            Enviar sugerencia
+                        </Button>
+                        <MyVerticallyCenteredModal
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        />
+                    </>
+                )}
             </div>
         </div>
     );
