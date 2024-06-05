@@ -10,12 +10,6 @@
 
 }
 
-.span-crearcuenta {
-  margin-bottom: 10px;
-  color: red;
-  font-size: 10px;
-}
-
 .crear-cuenta-container {
   display: flex;
   flex-direction: column;
@@ -43,18 +37,15 @@
 
 .label-crear-cuenta, .label-contraseña {
   margin-left: 0px;
+  margin-top: 2vh;
   margin-bottom: 0.5vh;
   font-size: 2.5vh;
   color: black;
 }
 
-.label-crear-cuenta:first-child {
-  margin-top: 2.5vh;
-}
-
 .input-crear-cuenta {
   width: 24vw;
-  margin-bottom: 2vh;
+  margin-bottom: 0.5vh;
   border-radius: 5px;
   border: black 2px;
 }
@@ -79,11 +70,19 @@
 .inline-crearcuenta {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
 .info-crearcuenta {
   color: #3d3d3d;
   font-size: 1.8vh;
+  margin-left: 1vh;
+}
+
+.span-crearcuenta {
+  margin-bottom: 10px;
+  margin-top: 0;
+  
+  color: red;
+  font-size: 20px !important;
 }

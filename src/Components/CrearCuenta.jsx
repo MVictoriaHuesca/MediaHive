@@ -41,7 +41,7 @@ function CrearCuenta() {
         <h1 style={{fontWeight: 'bold'}}>Crear cuenta nueva</h1>
           <form onSubmit={ onSubmit } className="form-container">
             <div class="info-crearcuenta">
-              <label htmlFor="nombreUsuario" className="label-crear-cuenta">Nombre de usuario</label>
+              <label htmlFor="nombreUsuario" className="label-crear-cuenta" style={{marginTop:'1.5vh'}}>Nombre de usuario</label>
               <span class="info-crearcuenta">(Entre 4 y 30 caracteres)</span>
             </div>
             <input
@@ -66,7 +66,7 @@ function CrearCuenta() {
             {
               errors.nombreUsuario && <span className='span-crearcuenta'>{errors.nombreUsuario.message}</span>
             }
-            <label htmlFor="correoElectronico" className="label-crear-cuenta">Correo electrónico</  label>
+            <label htmlFor="correoElectronico" className="label-crear-cuenta" >Correo electrónico</  label>
             <input
               type="email"
               name="correoElectronico"
@@ -85,9 +85,10 @@ function CrearCuenta() {
             {
               errors.correoElectronico && <span className='span-crearcuenta'>{errors.correoElectronico.message}</span>
             }
+          
             <div class="inline-crearcuenta">
               <label htmlFor="contrasena" className="label-contraseña">Contraseña</label>
-              <span class="info-crearcuenta">(Entre 4 y 30 caracteres)</span>
+              <span class="info-crearcuenta" style={{marginTop:'1.5vh'}}> (Entre 4 y 30 caracteres)</span>
             </div>
             <input
               type="password"
