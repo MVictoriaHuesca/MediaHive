@@ -18,13 +18,13 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton style={{paddingBottom:'1vh'}}>
-        <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight:'bold' }}>
+      <Modal.Header closeButton style={{ paddingBottom: '1vh' }}>
+        <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight: 'bold' }}>
           ¡Debes iniciar sesión para añadir un comentario!
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body style={{paddingTop:'1vh'}}>
-        <p style={{ marginBottom: '2vh',  }}>Inicia sesión o crea una cuenta nueva para añadir comentarios: </p>
+      <Modal.Body style={{ paddingTop: '1vh' }}>
+        <p style={{ marginBottom: '2vh', }}>Inicia sesión o crea una cuenta nueva para añadir comentarios: </p>
         <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
           <Link to="/CrearCuenta">
             <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
@@ -243,11 +243,11 @@ function Cancion() {
                     <button onClick={handleCancionSave} aria-label="Guardar canción" style={{ border: 'none', background: 'transparent' }}>
                       {guardado ?
                         <div title="Guardada">
-                          <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
+                          <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado en biblioteca"} style={{ marginLeft: '10px', color: 'black' }} />
                         </div>
                         :
                         <div title="Guardar">
-                          <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />
+                          <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar en biblioteca"} style={{ marginLeft: '10px', color: 'black' }} />
                         </div>}
                     </button>
                   ) : (
@@ -310,10 +310,12 @@ function Cancion() {
           </div>
           <div className="col-md-4">
             <div className="UserInputContainer">
+              {/* Título para el cuadro de texto del comentario del usuario por accesibilidad*/}
+              <label htmlFor="userCommentInput" className="sr-only">Escribe tu comentario aquí:</label>
               {/* Cuadro de texto para la opinión del usuario */}
               <textarea
+                id="userCommentInput"
                 alt="Cuadro de texto para añadir comentarios"
-                placeholder="Escribe tu opinión aquí..."
                 value={userComment}
                 onChange={handleUserCommentChange}
                 className="UserOpinion"
