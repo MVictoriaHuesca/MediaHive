@@ -531,7 +531,7 @@ function Ayuda() {
                                                 <img src={coment} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda escribir comentario de una película"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="7">
@@ -542,7 +542,7 @@ function Ayuda() {
                                                 <img src={coment2} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda ver comentarios de una pleícula"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -577,7 +577,7 @@ function Ayuda() {
                                                 <img src={barranavseries} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} ayuda="ayuda barra de búsqueda de una serie"/>
                                                 En la barra de navegación podrás buscar la serie que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -589,7 +589,7 @@ function Ayuda() {
                                                 <img src={popul} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} ayuda="ayuda series populares"/>
                                                 Aquí podrás descubrir las últimas series más populares del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -601,7 +601,7 @@ function Ayuda() {
                                                 <img src={top10s} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda top series"/>
                                                 Aquí podrás ver un top de series.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -613,7 +613,7 @@ function Ayuda() {
                                                 <img src={guardadas} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series guardadas"/>
                                                 Aquí podrás ver las series que has guardado en favoritos.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -625,7 +625,7 @@ function Ayuda() {
                                                 <img src={emision} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series en emisión"/>
                                                 Aquí podrás ver las series que están en emisión actualmente.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -647,7 +647,7 @@ function Ayuda() {
                                                 <img src={result} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda buscar título serie"/>
                                                 Cuando buscas el título de una serie, aparecerán los resultados de la búsqueda.
                                                 Aparecerán varias portadas de títulos relacionados.<br />
                                             </Accordion.Body>
@@ -669,7 +669,7 @@ function Ayuda() {
                                                 <img src={portadaser} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda portada serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
@@ -680,7 +680,7 @@ function Ayuda() {
                                                 <img src={nombre} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda título de serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
@@ -691,7 +691,7 @@ function Ayuda() {
                                                 <img src={simil} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series similares"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
@@ -702,7 +702,7 @@ function Ayuda() {
                                                 <img src={sinop} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda sinopsis de una serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="5">
@@ -713,7 +713,7 @@ function Ayuda() {
                                                 <img src={favor} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="guardar serie en biblioteca"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
@@ -724,7 +724,7 @@ function Ayuda() {
                                                 <img src={escribir} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda escribir comentario en una serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="7">
@@ -735,7 +735,7 @@ function Ayuda() {
                                                 <img src={ver} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda ver comentarios de una serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -764,7 +764,7 @@ function Ayuda() {
                                         <img src={canciones} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda canciones guardadas en biblioteca"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -777,7 +777,7 @@ function Ayuda() {
                                         <img src={pelis} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda películas guardadas en biblioteca"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -790,7 +790,7 @@ function Ayuda() {
                                         <img src={series} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda series guardadas en biblioteca"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -832,7 +832,7 @@ function Ayuda() {
                                         <img src={elegir} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda cambiar foto de perfil" />
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -845,7 +845,7 @@ function Ayuda() {
                                         <img src={elim} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda eliminar foto de perfil"/>
                                         Esta acción deja a tu foto de perfil en blanco.<br />
                                     </Accordion>
                                 </Accordion.Body>
@@ -859,7 +859,7 @@ function Ayuda() {
                                         <img src={nom} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda cambiar nobre de usuario"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
