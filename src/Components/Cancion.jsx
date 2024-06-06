@@ -14,28 +14,24 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          ¡Debes iniciar sesión para {`${props.error}`}!
+      <Modal.Header closeButton style={{paddingBottom:'1vh'}}>
+        <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight:'bold' }}>
+          ¡Debes iniciar sesión para añadir un comentario!
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <h4>Inicia sesión en tu cuenta o crea una nueva para {`${props.error}`}</h4>
-        <div style={{ textAlign: "center" }}>
-          <h5>
-            <Link to="/CrearCuenta">
-              <Button className="registro-cancion" >Registrarse</Button>
-            </Link>
-          </h5>
-          <h5>
-            <Link to="/InicioSesion">
-              <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
-            </Link>
-          </h5>
+      <Modal.Body style={{paddingTop:'1vh'}}>
+        <p style={{ marginBottom: '2vh',  }}>Inicia sesión o crea una cuenta nueva para añadir comentarios: </p>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+          <Link to="/CrearCuenta">
+            <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
+          </Link>
+          <Link to="/InicioSesion">
+            <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
+          </Link>
         </div>
       </Modal.Body>
 
