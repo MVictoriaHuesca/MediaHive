@@ -577,7 +577,7 @@ function Ayuda() {
                                                 <img src={barranavseries} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} ayuda="ayuda barra de búsqueda de una serie"/>
+                                                }} alt="ayuda barra de búsqueda de una serie"/>
                                                 En la barra de navegación podrás buscar la serie que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -589,7 +589,7 @@ function Ayuda() {
                                                 <img src={popul} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} ayuda="ayuda series populares"/>
+                                                }} alt="ayuda series populares"/>
                                                 Aquí podrás descubrir las últimas series más populares del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -872,15 +872,17 @@ function Ayuda() {
 
             <div className="container-sugerencia">
 
-                <h2 style={{marginLeft: '2vh', marginTop: '12vh', marginBottom:'3vh'}}>¿Te gustaría enviarnos una sugerencia?</h2>
+            <label htmlFor="sugerencia"><h2 style={{marginLeft: '2vh', marginTop: '12vh', marginBottom:'3vh'}}>¿Te gustaría enviarnos una sugerencia?</h2></label>
                 <div>
                     {/* Cuadro de texto para la opinión del usuario */}
+                    
                     <textarea
+                        id="sugerencia"
                         placeholder="Escribe tu sugerencia aquí..."
                         value={userComment}
                         onChange={handleUserCommentChange}
                         className="UserOpinion"
-                        style={{ width: '40%', height: '18vh', marginLeft: '2vh', marginBottom: '1.5vh'}}
+                        style={{ width: '40%', height: '18vh', marginLeft: '2vh', marginBottom: '1.5vh' }}
                     />
                     {/* Botón para añadir comentario */}
 
