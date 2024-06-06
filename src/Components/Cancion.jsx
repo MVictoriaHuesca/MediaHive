@@ -240,7 +240,7 @@ function Cancion() {
                 <h3 className="SongTitle">
                   {titulo}
                   {usuario ? (
-                    <button onClick={handleCancionSave} style={{ border: 'none', background: 'transparent' }}>
+                    <button onClick={handleCancionSave} aria-label="Guardar canción" style={{ border: 'none', background: 'transparent' }}>
                       {guardado ?
                         <div title="Guardada">
                           <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
@@ -252,7 +252,7 @@ function Cancion() {
                     </button>
                   ) : (
                     <>
-                      <button onClick={() => setModalShowGuardar(true)} style={{ border: 'none', background: 'transparent' }}>
+                      <button onClick={() => setModalShowGuardar(true)} aria-label="Guardar canción" style={{ border: 'none', background: 'transparent' }}>
                         <BookmarkAddIcon
                           className="BookmarkIcon"
                           alt={"Guardar"}
@@ -312,6 +312,7 @@ function Cancion() {
             <div className="UserInputContainer">
               {/* Cuadro de texto para la opinión del usuario */}
               <textarea
+                alt="Cuadro de texto para añadir comentarios"
                 placeholder="Escribe tu opinión aquí..."
                 value={userComment}
                 onChange={handleUserCommentChange}
