@@ -232,12 +232,12 @@ function detallesSeries() {
                         {usuario ? (
                             <button onClick={handleSerieSave} aria-label="Añadir serie" style={{ border: 'none', background: 'transparent' }}>
                                 {seriesSaved.includes(serie.id) ?
-                                    <div title="Guardada">
-                                        <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
+                                    <div title="Guardada en biblioteca">
+                                        <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado en biblioteca"} style={{ marginLeft: '10px', color: 'black' }} />
                                     </div>
                                     :
-                                    <div title="Guardar">
-                                        <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />
+                                    <div title="Guardar en biblioteca">
+                                        <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar en biblioteca"} style={{ marginLeft: '10px', color: 'black' }} />
                                     </div>}
                             </button>
                         ) : (
@@ -308,7 +308,6 @@ function detallesSeries() {
                             {/* Cuadro de texto para la opinión del usuario */}
                             <textarea
                                 id="userCommentInput"
-                                placeholder="Escribe tu opinión aquí..."
                                 value={userComment}
                                 onChange={handleUserCommentChange}
                                 className="UserOpinion"

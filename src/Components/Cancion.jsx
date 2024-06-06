@@ -242,11 +242,11 @@ function Cancion() {
                   {usuario ? (
                     <button onClick={handleCancionSave} aria-label="Guardar canción" style={{ border: 'none', background: 'transparent' }}>
                       {guardado ?
-                        <div title="Guardada">
+                        <div title="Guardado en biblioteca">
                           <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado en biblioteca"} style={{ marginLeft: '10px', color: 'black' }} />
                         </div>
                         :
-                        <div title="Guardar">
+                        <div title="Guardar en biblioteca">
                           <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar en biblioteca"} style={{ marginLeft: '10px', color: 'black' }} />
                         </div>}
                     </button>
