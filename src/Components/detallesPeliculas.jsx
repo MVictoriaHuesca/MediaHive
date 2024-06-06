@@ -226,14 +226,16 @@ function detallesPeliculas() {
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <h3>{movie.title}</h3>
                         {usuario ? (
-                            <button onClick={handleMovieSave} style={{ border: 'none', background: 'transparent' }}>
+                            <button onClick={handleMovieSave} aria-label="Añadir Pelicula" style={{ border: 'none', background: 'transparent' }}>
                             {moviesSaved.includes(movie.id) ? 
                                 <div title="Guardada">
                                 <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
+                                <span className="sr-only">Película guardada</span>
                               </div>
                               :
                               <div title="Guardar">
                                 <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />
+                                <span className="sr-only">Guardar película</span>
                               </div>}
                             </button>
                         ) : (
@@ -297,8 +299,12 @@ function detallesPeliculas() {
                     </div>
                     <div className="col-md-4" style={{marginLeft:'5vh'}}>
                         <div className="UserInputContainer">
+                            {/* Título para el cuadro de texto del comentario del usuario por accesibilidad*/}
+                            <label htmlFor="userCommentInput" className="sr-only">Escribe tu comentario</label>
+
                             {/* Cuadro de texto para la opinión del usuario */}
                             <textarea
+                            id="userCommentInput"
                             placeholder="Escribe tu opinión aquí..."
                             value={userComment}
                             onChange={handleUserCommentChange}

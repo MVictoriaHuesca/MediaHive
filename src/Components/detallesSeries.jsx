@@ -18,38 +18,38 @@ import "../styles/detallesPeliculasSeries-style.css";
 /* Función para mostrar cuadro de error si el usuario no tiene cuenta */
 function MyVerticallyCenteredModal(props) {
     return (
-      <Modal
-        {...props}
-        size="md"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton style={{paddingBottom:'1vh'}}>
-          
-          <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight:'bold' }}>
-            ¡Debes iniciar sesión para añadir un comentario!
-          </Modal.Title>
-          
-        </Modal.Header>
-        <Modal.Body style={{paddingTop:'1vh'}}>
-          <p style={{ marginBottom: '2vh',  }}>Inicia sesión o crea una cuenta nueva para añadir comentarios: </p>
-          <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-            <Link to="/CrearCuenta">
-              <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
-            </Link>
-            <Link to="/InicioSesion">
-              <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
-            </Link>
-          </div>
-        </Modal.Body>
-  
-        <Modal.Footer style={{ padding: '0', height: '1px' }}>
-          ´{/*<Button onClick={props.onHide} class="cerrar-cancion">Cerrar</Button>*/}
-        </Modal.Footer>
-  
-      </Modal>
+        <Modal
+            {...props}
+            size="md"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton style={{ paddingBottom: '1vh' }}>
+
+                <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight: 'bold' }}>
+                    ¡Debes iniciar sesión para añadir un comentario!
+                </Modal.Title>
+
+            </Modal.Header>
+            <Modal.Body style={{ paddingTop: '1vh' }}>
+                <p style={{ marginBottom: '2vh', }}>Inicia sesión o crea una cuenta nueva para añadir comentarios: </p>
+                <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                    <Link to="/CrearCuenta">
+                        <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
+                    </Link>
+                    <Link to="/InicioSesion">
+                        <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
+                    </Link>
+                </div>
+            </Modal.Body>
+
+            <Modal.Footer style={{ padding: '0', height: '1px' }}>
+                ´{/*<Button onClick={props.onHide} class="cerrar-cancion">Cerrar</Button>*/}
+            </Modal.Footer>
+
+        </Modal>
     );
-  }
+}
 
 //<-------------------------------------------------------------------------------------------------------->//
 
@@ -224,30 +224,30 @@ function detallesSeries() {
         <div id="detallesSeries">
             <div className="mx-auto px-5 py-5 d-flex">
                 <div>
-                    <img src={`https://image.tmdb.org/t/p/w500${serie.poster_path}`} alt={serie.name} style={{ height: '400px', width: 'auto', marginLeft:'2vh'  }} />
+                    <img src={`https://image.tmdb.org/t/p/w500${serie.poster_path}`} alt={serie.name} style={{ height: '400px', width: 'auto', marginLeft: '2vh' }} />
                 </div>
                 <div className=" px-5 py-3" >
-                    <div style={{ display: 'flex', alignItems:'center'}}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
                         <h3>{serie.name}</h3>
                         {usuario ? (
-                            <button onClick={handleSerieSave} style={{ border: 'none', background: 'transparent' }}>
+                            <button onClick={handleSerieSave} aria-label="Añadir serie" style={{ border: 'none', background: 'transparent' }}>
                                 {seriesSaved.includes(serie.id) ?
                                     <div title="Guardada">
-                                    <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
-                                  </div>
-                                  :
-                                  <div title="Guardar">
-                                    <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />
-                                  </div>}
+                                        <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
+                                    </div>
+                                    :
+                                    <div title="Guardar">
+                                        <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />
+                                    </div>}
                             </button>
                         ) : (
                             <>
                                 <button onClick={() => setModalShowGuardar(true)} style={{ border: 'none', background: 'transparent' }}>
-                                <BookmarkAddIcon 
-                                    className="BookmarkIcon" 
-                                    alt={"Guardar"} 
-                                    style={{ marginLeft: '10px', color: 'black' }} 
-                                />
+                                    <BookmarkAddIcon
+                                        className="BookmarkIcon"
+                                        alt={"Guardar"}
+                                        style={{ marginLeft: '10px', color: 'black' }}
+                                    />
                                 </button>
                                 <MyVerticallyCenteredModal
                                     show={modalShowGuardar}
@@ -269,7 +269,7 @@ function detallesSeries() {
                     </div>
                 </div>
 
-                <div style={{marginLeft:'auto'}}>
+                <div style={{ marginLeft: 'auto' }}>
                     <h3 className="mx-auto py-2" style={{ textAlign: 'center' }}>Series similares</h3>
                     <div className="mx-auto px-5 py-3" style={{ display: 'flex', flexWrap: 'wrap', width: '350px' }}>
                         {similarSeries.slice(0, 4).map(similarSerie => (
@@ -285,9 +285,9 @@ function detallesSeries() {
 
             {/*<---------------------------------COMENTARIOS------------------------------------------------------->*/}
 
-            <div className="container" style={{marginLeft:'0'}}>
+            <div className="container" style={{ marginLeft: '0' }}>
                 <div className="row">
-                    <div className="col-md-6" style={{marginLeft:'5vh'}}>
+                    <div className="col-md-6" style={{ marginLeft: '5vh' }}>
                         <h4 className="CommentTitle">Comentarios:</h4>
                         <div className="tabla">
                             {comentariosAleatorios.map((comment, index) => (
@@ -296,14 +296,18 @@ function detallesSeries() {
                                 </div>
                             ))}
                         </div>
-                        <Button variant="contained" color="secondary" className="NextCommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px', marginTop:'1vh' }} onClick={generarComentariosAleatorios}>
+                        <Button variant="contained" color="secondary" className="NextCommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px', marginTop: '1vh' }} onClick={generarComentariosAleatorios}>
                             Ver más comentarios
                         </Button>
                     </div>
-                    <div className="col-md-4" style={{marginLeft: '4vh', padding:'1px'}}>
+                    <div className="col-md-4" style={{ marginLeft: '4vh', padding: '1px' }}>
                         <div className="UserInputContainer">
+                            {/* Título para el cuadro de texto del comentario del usuario por accesibilidad*/}
+                            <label htmlFor="userCommentInput" className="sr-only">Escribe tu comentario</label>
+
                             {/* Cuadro de texto para la opinión del usuario */}
                             <textarea
+                                id="userCommentInput"
                                 placeholder="Escribe tu opinión aquí..."
                                 value={userComment}
                                 onChange={handleUserCommentChange}
