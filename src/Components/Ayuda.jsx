@@ -248,7 +248,7 @@ function Ayuda() {
                                                 <img src={resultados} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} alt="ayuda resultados canción"/>
+                                                }} alt="ayuda resultados buscar canción"/>
                                                 <strong>1.</strong> Cuando buscas el título de una canción, aparecerán los resultados de la búsqueda.
                                                 El primer resultado será la canción que buscas, y los demás serán canciones relacionadas.<br />
                                                 <strong>2.</strong> Puedes escuchar la canción online o abrirla en Spotify.<br />
@@ -283,7 +283,7 @@ function Ayuda() {
                                                 <img src={reproductor} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt=""/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
