@@ -333,12 +333,12 @@ function Cancion() {
               </>
             ) : (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white' }} onClick={() => setModalShow(true)}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white' }} onClick={() => setModalShowComentarios(true)}>
                   Añadir comentario
                 </Button>
                 <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
+                  show={modalShowComentarios}
+                  onHide={() => setModalShowComentarios(false)}
                 />
               </>
             )}
