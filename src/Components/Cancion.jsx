@@ -327,13 +327,13 @@ function Cancion() {
             </div>
             {usuario ? (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
                   Añadir comentario
                 </Button>
               </>
             ) : (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white' }} onClick={() => setModalShow(true)}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white' }} onClick={() => setModalShow(true)}>
                   Añadir comentario
                 </Button>
                 <MyVerticallyCenteredModal
