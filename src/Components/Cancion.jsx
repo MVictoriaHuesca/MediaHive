@@ -221,7 +221,7 @@ function Cancion() {
   }, []);
 
   return (
-    <div>
+    <div className="parent-container-cancion">
       <div>
         <div className="row">
           <div className="MusicaContainer col-md-7">
