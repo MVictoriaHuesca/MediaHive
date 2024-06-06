@@ -190,7 +190,7 @@ function Ayuda() {
                                                 <img src={barranav} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda barra de búsqueda de cancion"/>
                                                 En la barra de navegación podrás buscar la canción que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -202,7 +202,7 @@ function Ayuda() {
                                                 <img src={Ultimosestrenos} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda últimos estrenos de canciones"/>
                                                 Aquí podrás descubrir las últimas canciones que se han lanzado.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -214,7 +214,7 @@ function Ayuda() {
                                                 <img src={Maspopulares} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda canciones más escuchadas"/>
                                                 Aquí podrás ver las canciones más escuchadas del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -226,7 +226,7 @@ function Ayuda() {
                                                 <img src={Top10} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda top 10 canciones más escuchadas"/>
                                                 Aquí podrás ver las 10 canciones más escuchadas en España.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -248,7 +248,7 @@ function Ayuda() {
                                                 <img src={resultados} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda resultados canción"/>
                                                 <strong>1.</strong> Cuando buscas el título de una canción, aparecerán los resultados de la búsqueda.
                                                 El primer resultado será la canción que buscas, y los demás serán canciones relacionadas.<br />
                                                 <strong>2.</strong> Puedes escuchar la canción online o abrirla en Spotify.<br />
@@ -262,7 +262,7 @@ function Ayuda() {
                                                 <img src={artista} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda resultados buscar artista"/>
                                                 Cuando buscas un artista, aparecerán sus canciones más populares y podrás escucharlas online o abrirlas en Spotify.
                                             </Accordion.Body>
                                         </Accordion.Item>
