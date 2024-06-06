@@ -305,7 +305,7 @@ function Ayuda() {
                                                 <img src={artis} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda imagen artista"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
@@ -316,7 +316,7 @@ function Ayuda() {
                                                 <img src={valorar} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda valorar canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="5">
@@ -327,7 +327,7 @@ function Ayuda() {
                                                 <img src={favoritos} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda guardar en biblioteca canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
@@ -338,7 +338,7 @@ function Ayuda() {
                                                 <img src={comentarios} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda escribir comentarios en una canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="7">
