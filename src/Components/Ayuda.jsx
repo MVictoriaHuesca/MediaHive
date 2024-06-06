@@ -147,6 +147,7 @@ function Ayuda() {
     {/*------------------------------------------------QUIENES-SOMOS--------------------------------------------------------------- */ }
     return (
         <div class="container-menu">
+            <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'></link>
             <Accordion defaultActiveKey="0" flush className="items">
                 <Accordion.Item eventKey="1" className="quienes-somos">
                     <Accordion.Header>
@@ -889,7 +890,7 @@ function Ayuda() {
                 </div>
                 {usuario ? (
                     <>
-                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white', marginLeft:'2vh' }} ref={target} onClick={() => { handleUserCommentSubmit(); setShow(!show) }} >
+                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', marginLeft:'2vh', marginBottom:'3vh' }} ref={target} onClick={() => { handleUserCommentSubmit(); setShow(!show) }} >
                             Enviar sugerencia
                         </Button>
                         <Overlay target={target.current} show={show} placement="right">
@@ -902,7 +903,7 @@ function Ayuda() {
                     </>
                 ) : (
                     <>
-                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white', marginLeft:'2vh' }} onClick={() => setModalShow(true)} >
+                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', marginLeft:'2vh', marginBottom:'3vh' }} onClick={() => setModalShow(true)} >
                             Enviar sugerencia
                         </Button>
                         <MyVerticallyCenteredModal

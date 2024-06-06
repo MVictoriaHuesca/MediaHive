@@ -296,7 +296,7 @@ function detallesSeries() {
                                 </div>
                             ))}
                         </div>
-                        <Button variant="contained" color="secondary" className="NextCommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px', marginTop: '1vh' }} onClick={generarComentariosAleatorios}>
+                        <Button variant="contained" color="secondary" className="NextCommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px', marginTop: '1vh', marginBottom:'3vh' }} onClick={generarComentariosAleatorios}>
                             Ver más comentarios
                         </Button>
                     </div>
@@ -318,13 +318,13 @@ function detallesSeries() {
                         </div>
                         {usuario ? (
                             <>
-                                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
+                                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
                                     Añadir comentario
                                 </Button>
                             </>
                         ) : (
                             <>
-                                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px' }} onClick={() => setModalShowComentarios(true)}>
+                                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', borderRadius: '8px' }} onClick={() => setModalShowComentarios(true)}>
                                     Añadir comentario
                                 </Button>
                                 <MyVerticallyCenteredModal

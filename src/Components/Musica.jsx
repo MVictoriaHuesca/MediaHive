@@ -41,6 +41,7 @@ function Musica() {
             marginRight: '10px',
             fontSize: '16px',
             outline: 'none',
+            width: '50%'
           }}
           placeholder="Buscar canción..."
           />

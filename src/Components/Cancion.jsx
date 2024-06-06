@@ -326,7 +326,7 @@ function Cancion() {
             </div>
             {usuario ? (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
                   Añadir comentario
                 </Button>
               </>
