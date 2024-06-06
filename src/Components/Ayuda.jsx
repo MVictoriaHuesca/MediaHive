@@ -349,7 +349,7 @@ function Ayuda() {
                                                 <img src={vercomentarios} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda ver comentarios canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -384,7 +384,7 @@ function Ayuda() {
                                                 <img src={barranavpelis} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda barra de búsqueda película"/>
                                                 En la barra de navegación podrás buscar la película que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -396,7 +396,7 @@ function Ayuda() {
                                                 <img src={popu} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda películas populares"/>
                                                 Aquí podrás descubrir las últimas películas más populares del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -408,7 +408,7 @@ function Ayuda() {
                                                 <img src={top} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda top 10 películas"/>
                                                 Aquí podrás ver un top de películas.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -420,7 +420,7 @@ function Ayuda() {
                                                 <img src={guardadas} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda películas guardadas en biblioteca"/>
                                                 Aquí podrás ver las películas que has guardado en favoritos.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -432,7 +432,7 @@ function Ayuda() {
                                                 <img src={estrenos} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda últimos estrenos de películas"/>
                                                 Aquí podrás ver las películas que se han estrenado recientemente.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -454,7 +454,7 @@ function Ayuda() {
                                                 <img src={resultadopeli} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda resultados buscar películas"/>
                                                 Cuando buscas el título de una película, aparecerán los resultados de la búsqueda.
                                                 Aparecerán varias portadas de títulos relacionados.<br />
                                             </Accordion.Body>
@@ -476,7 +476,7 @@ function Ayuda() {
                                                 <img src={portadapeli} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda portada película "/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
@@ -487,7 +487,7 @@ function Ayuda() {
                                                 <img src={titulopeli} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda título película"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
@@ -498,7 +498,7 @@ function Ayuda() {
                                                 <img src={pelisimilares} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda películas similares"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
@@ -509,7 +509,7 @@ function Ayuda() {
                                                 <img src={sinopsis} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda sinopsis película"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="5">
@@ -520,7 +520,7 @@ function Ayuda() {
                                                 <img src={fav} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda guardar película en biblioteca"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
