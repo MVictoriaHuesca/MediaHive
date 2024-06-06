@@ -14,39 +14,38 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="md"
+      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton style={{paddingBottom:'1vh'}}>
-        
-        <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight:'bold' }}>
-          ¡Debes iniciar sesión para añadir un comentario!
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          ¡Debes iniciar sesión para {`${props.error}`}!
         </Modal.Title>
-        
       </Modal.Header>
-      <Modal.Body style={{paddingTop:'1vh'}}>
-        <p style={{ marginBottom: '2vh',  }}>Inicia sesión o crea una cuenta nueva para añadir comentarios: </p>
-        <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-          <Link to="/CrearCuenta">
-            <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
-          </Link>
-          <Link to="/InicioSesion">
-            <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
-          </Link>
+      <Modal.Body>
+        <h4>Inicia sesión en tu cuenta o crea una nueva para {`${props.error}`}</h4>
+        <div style={{ textAlign: "center" }}>
+          <h5>
+            <Link to="/CrearCuenta">
+              <Button className="registro-cancion" >Registrarse</Button>
+            </Link>
+          </h5>
+          <h5>
+            <Link to="/InicioSesion">
+              <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
+            </Link>
+          </h5>
         </div>
       </Modal.Body>
-
-      <Modal.Footer style={{ padding: '0', height: '1px' }}>
-        ´{/*<Button onClick={props.onHide} class="cerrar-cancion">Cerrar</Button>*/}
-      </Modal.Footer>
 
     </Modal>
   );
 }
 
-function Cancion(props) {
-  const [modalShow, setModalShow] = React.useState(false);
+function Cancion() {
+  const [modalShowComentarios, setModalShowComentarios] = React.useState(false);
+  const [modalShowGuardar, setModalShowGuardar] = React.useState(false);
 
   // Autores de comentarios
   const autores = [
@@ -159,7 +158,7 @@ function Cancion(props) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '733197fdcamsh9fd898d4b4b0d10p1493cdjsn7aa3fb3dcb4d',
+      'X-RapidAPI-Key': 'a8e49a3adcmsh7aab7090d88bff5p17d687jsn80c93f71f7e8',
       'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
     }
   };
@@ -205,9 +204,14 @@ function Cancion(props) {
       let cancionesSaved = JSON.parse(localStorage.getItem('cancionesSaved'));
       if (!cancionesSaved.includes(id)) {
         cancionesSaved.push(id);
+        localStorage.setItem('cancionesSaved', JSON.stringify(cancionesSaved));
+        setGuardado(true);
+      } else {
+        cancionesSaved = cancionesSaved.filter((cancion) => cancion !== id);
+        localStorage.setItem('cancionesSaved', JSON.stringify(cancionesSaved));
+        setGuardado(false);
       }
     }
-    setGuardado(true);
   }
 
   useEffect(() => {
@@ -217,7 +221,7 @@ function Cancion(props) {
   }, []);
 
   return (
-    <div class="parent-container-cancion">
+    <div>
       <div>
         <div className="row">
           <div className="MusicaContainer col-md-7">
@@ -239,10 +243,34 @@ function Cancion(props) {
               <div>
                 <h3 className="SongTitle">
                   {titulo}
-                  <button onClick={handleCancionSave} style={{ border: 'none', background: 'transparent' }}>
-                    {guardado ? <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
-                      : <BookmarkAddIcon className="BookmarkIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />}
-                  </button>
+                  {usuario ? (
+                    <button onClick={handleCancionSave} style={{ border: 'none', background: 'transparent' }}>
+                      {guardado ?
+                        <div title="Guardada">
+                          <BookmarkAddedIcon className="BookmarkaddedIcon" alt={"Guardado"} style={{ marginLeft: '10px', color: 'black' }} />
+                        </div>
+                        :
+                        <div title="Guardar">
+                          <BookmarkAddIcon className="BookmarkaddIcon" alt={"Guardar"} style={{ marginLeft: '10px', color: 'black' }} />
+                        </div>}
+                    </button>
+                  ) : (
+                    <>
+                      <button onClick={() => setModalShowGuardar(true)} style={{ border: 'none', background: 'transparent' }}>
+                        <BookmarkAddIcon
+                          className="BookmarkIcon"
+                          alt={"Guardar"}
+                          style={{ marginLeft: '10px', color: 'black' }}
+                        />
+                      </button>
+                      <MyVerticallyCenteredModal
+                        show={modalShowGuardar}
+                        onHide={() => setModalShowGuardar(false)}
+                        error='guardar canciones'
+                      />
+                    </>
+                  )}
+
                 </h3>
               </div>
               {/* Estrellas */}
@@ -299,13 +327,13 @@ function Cancion(props) {
             </div>
             {usuario ? (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white', borderRadius: '8px' }} onClick={handleUserCommentSubmit}>
                   Añadir comentario
                 </Button>
               </>
             ) : (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#009f04', color: 'white' }} onClick={() => setModalShow(true)}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white' }} onClick={() => setModalShow(true)}>
                   Añadir comentario
                 </Button>
                 <MyVerticallyCenteredModal
