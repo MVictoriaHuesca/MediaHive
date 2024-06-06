@@ -59,6 +59,7 @@ function MusicaResultados() {
     <br/>
       {/*Barra de buscador*/}
       <form onSubmit={handleSearch} className="formulario" style={{display:'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <label htmlFor="search" className="visually-hidden">Buscar canción</label>
         <input type="text" value={cancion} onChange={e => setCancion(e.target.value)} style={{
           padding: '10px',
           borderRadius: '5px',
