@@ -132,7 +132,7 @@ return (
                                         {canciones.slice(i * 3, i * 3 + 3).map((cancion, index) => (
                                             <div className="col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center align-items-center" key={index}>
                                                 <Link to={`/cancion/${cancion.id}`} style={{ textDecoration: 'none', textAlign: 'center' }}>
-                                                    <img src={cancion.imagen} className="img-fluid" style={{ maxWidth: '180px', maxHeight: '180px' }} />
+                                                    <img src={cancion.imagen} className="img-fluid" alt={cancion.titulo} style={{ maxWidth: '180px', maxHeight: '180px' }} />
                                                     <h5 style={{ color: 'black' }}>{cancion.titulo}</h5>
                                                 </Link>
                                             </div>
