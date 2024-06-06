@@ -332,7 +332,7 @@ function Cancion() {
               </>
             ) : (
               <>
-                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#5d777d', color: 'white' }} onClick={() => setModalShowComentarios(true)}>
+                <Button variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0Cs', color: 'white' }} onClick={() => setModalShowComentarios(true)}>
                   Añadir comentario
                 </Button>
                 <MyVerticallyCenteredModal
