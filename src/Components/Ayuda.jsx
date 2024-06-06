@@ -283,7 +283,7 @@ function Ayuda() {
                                                 <img src={reproductor} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} alt=""/>
+                                                }} alt="ayuda reproductor online"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
@@ -294,7 +294,7 @@ function Ayuda() {
                                                 <img src={titulo} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda título canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
