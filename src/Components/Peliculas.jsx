@@ -144,7 +144,8 @@ function Peliculas() {
       {/*Formulario para buscar peliculas*/}
       <br />
       <form onSubmit={searchMovies} className="formulario d-flex p-12" style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <input type="text" onChange={e => setSearchKey(e.target.value)} alt={"Buscador de peliculas"} style={{
+        <label htmlFor="search" className="visually-hidden">Buscar pelicula</label>
+        <input id="search" type="text" onChange={e => setSearchKey(e.target.value)} alt={"Buscador de peliculas"} style={{
           padding: '10px',
           borderRadius: '5px',
           border: '2px solid #ccc',
@@ -155,7 +156,7 @@ function Peliculas() {
         }}
           placeholder="Buscar pelicula..."
         />
-        <button type="submit" alt={"Buscar Pelicula"}  className="boton-buscar-pelicula"
+        <button type="submit" alt={"Buscar Pelicula"} className="boton-buscar-pelicula"
         >Buscar</button>
       </form>
       <br />
