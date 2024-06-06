@@ -33,7 +33,8 @@ function Musica() {
       <br/>
         {/*Barra de buscador*/}
         <form onSubmit={handleSearch} className="formulario d-flex p-12"  style={{alignItems: 'center', justifyContent: 'center' }}>
-          <input type="text" value={cancion} onChange={e => setCancion(e.target.value)} style={{
+          <label htmlFor="search" className="visually-hidden">Buscar canción</label>
+          <input id="search" type="text" value={cancion} onChange={e => setCancion(e.target.value)} alt={"Buscador de canciones"} style={{
             padding: '10px',
             borderRadius: '5px',
             border: '2px solid #ccc',
@@ -93,31 +94,31 @@ function Musica() {
               <div className="carousel-item-content row align-items-center py-2">
                 <div className="col d-flex justify-content-center">
                   <Link to="/cancion/33VIvWmmCUgix6Htm1WdOJ" style={{ textDecoration: 'none', textAlign: 'center' }}>
-                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e0244d0e103124e96e727eb54e7" style={{ width: '180px', height: '180px' }}/>  
+                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e0244d0e103124e96e727eb54e7" alt="FARDOS" style={{ width: '180px', height: '180px' }}/>  
                   <h5 style={{textAlign: "center", marginTop:'1vh'}}>FARDOS</h5>
                   </Link>                  
                 </div>
                 <div className="col d-flex justify-content-center">
                   <Link to="/cancion/43PiEypaceH339CSNiggyj" style={{ textDecoration: 'none', textAlign: 'center' }}>
-                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e025f516e13e1b417769a0a7cdd" style={{ width: '180px', height: '180px' }}/>  
+                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e025f516e13e1b417769a0a7cdd" alt="BBY BOO - REMIX" style={{ width: '180px', height: '180px' }}/>  
                   <h5 style={{textAlign: "center", marginTop:'1vh'}}>BBY BOO - REMIX</h5>
                   </Link>                  
                 </div>
                 <div className="col d-flex justify-content-center">
                   <Link to="/cancion/6RqD0fpAaKEZvQd0QrTj7j" style={{ textDecoration: 'none', textAlign: 'center' }}>
-                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e0245e6bba1ac0c5b54a9ee8121" style={{ width: '180px', height: '180px' }}/>  
+                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e0245e6bba1ac0c5b54a9ee8121" alt="Lo Que Tiene" style={{ width: '180px', height: '180px' }}/>  
                   <h5 style={{textAlign: "center", marginTop:'1vh'}}>Lo Que Tiene</h5>
                   </Link>                  
                 </div>
                 <div className="col d-flex justify-content-center">
                   <Link to="/cancion/4Dvkj6JhhA12EX05fT7y2e" style={{ textDecoration: 'none', textAlign: 'center' }}>
-                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e022e8ed79e177ff6011076f5f0" style={{ width: '180px', height: '180px' }}/>  
+                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e022e8ed79e177ff6011076f5f0" alt="As It Was" style={{ width: '180px', height: '180px' }}/>  
                   <h5 style={{textAlign: "center", marginTop:'1vh'}}>As It Was</h5>
                   </Link>                  
                 </div>
                 <div className="col d-flex justify-content-center">
                   <Link to="/cancion/0mWVScJbxO3tbXuiZOxYZE" style={{ textDecoration: 'none', textAlign: 'center' }}>
-                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e0208c74a3a99b01a6d3933b169" style={{ width: '180px', height: '180px' }}/>  
+                    <img className="cancion" src="https://i.scdn.co/image/ab67616d00001e0208c74a3a99b01a6d3933b169" alt="So Long, London" style={{ width: '180px', height: '180px' }}/>  
                   <h5 style={{textAlign: "center", marginTop:'1vh'}}>So Long, London</h5>
                   </Link>                  
                 </div>
