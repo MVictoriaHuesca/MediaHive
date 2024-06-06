@@ -45,6 +45,7 @@ function CrearCuenta() {
               <span class="info-crearcuenta">(Entre 4 y 30 caracteres)</span>
             </div>
             <input
+              id="nombreUsuario"
               type="text"
               name="nombreUsuario"
               {...register("nombreUsuario", { 
@@ -68,6 +69,7 @@ function CrearCuenta() {
             }
             <label htmlFor="correoElectronico" className="label-crear-cuenta" >Correo electrónico</  label>
             <input
+              id="correoElectronico"
               type="email"
               name="correoElectronico"
               {...register("correoElectronico", { 
@@ -91,6 +93,7 @@ function CrearCuenta() {
               <span class="info-crearcuenta" style={{marginTop:'1.5vh'}}> (Entre 4 y 30 caracteres)</span>
             </div>
             <input
+              id="contrasena"
               type="password"
               name="contrasena"
               {...register("contrasena", { 
