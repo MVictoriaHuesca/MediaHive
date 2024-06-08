@@ -72,7 +72,7 @@ function App(){
         }/>
         <Route path='/CrearCuenta' element={
           <>
-            <TopNavBar name="Cuenta Nueva"/>
+            <TopNavBar name="Nueva Cuenta"/>
             <div style={{display: "flex"}}>
               <LeftToolBar altura="100"/>
               <div className="contenido">

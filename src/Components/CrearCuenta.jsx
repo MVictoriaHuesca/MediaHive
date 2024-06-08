@@ -1,7 +1,6 @@
 
 import React from "react";
 import '../styles/CrearCuenta.css';
-import imagen from "../Images/MediaHive_icon.png";
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 
@@ -38,7 +37,7 @@ function CrearCuenta() {
     <div className="content-crear-cuenta">
       <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'></link>
       <div className="crear-cuenta-container">
-        <h1 style={{fontWeight: 'bold'}}>Crear cuenta nueva</h1>
+        <h1 style={{fontWeight: 'bold'}}>Crear nueva cuenta</h1>
           <form onSubmit={ onSubmit } className="form-container">
             <div class="info-crearcuenta">
               <label htmlFor="nombreUsuario" className="label-crear-cuenta" style={{marginTop:'1.5vh', marginLeft:'-5px'}}>Nombre de usuario</label>
