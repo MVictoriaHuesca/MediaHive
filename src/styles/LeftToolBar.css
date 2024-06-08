@@ -9,7 +9,7 @@
     background-color: hsl(196, 12%, 18%);
     flex-grow: 1;
     height: 100vh;
-    margin-top: 9vh;
+    margin-top: 12vh;
 }
 
 #barraLateral .nav-link.active {
