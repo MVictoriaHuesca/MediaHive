@@ -30,7 +30,7 @@ function LeftToolBar() {
                   <span>
                     <HomeIcon className="HomeIcon mr-2" />
                   </span>
-                  <span>Inicio</span>
+                  <span class="texto-leftnav">Inicio</span>
                 </button>
             </li>
           </Link>
@@ -42,7 +42,7 @@ function LeftToolBar() {
                   <span>
                     <AudiotrackIcon className="AudiotrackIcon mr-2" />
                   </span>
-                  <span>Música</span>  
+                  <span class="texto-leftnav">Música</span>  
                 </button>              
             </li>
           </Link>
@@ -55,7 +55,7 @@ function LeftToolBar() {
                   <span>
                     <MovieIcon className="MovieIcon mr-2" />
                   </span>
-                  <span>Películas</span>
+                  <span class="texto-leftnav">Películas</span>
                 </button>
             </li>
           </Link>
@@ -68,7 +68,7 @@ function LeftToolBar() {
                   <span>
                     <SlideshowIcon className="SlideshowIcon mr-2" />
                   </span>
-                  <span>Series</span>
+                  <span class="texto-leftnav">Series</span>
                 </button>
             </li>
           </Link>
@@ -81,7 +81,7 @@ function LeftToolBar() {
                   <span>
                     <HiveIcon className="HiveIcon mr-2" />
                   </span>
-                  <span><br/>Hive</span>
+                  <span class="texto-leftnav"><br/>Hive</span>
                 </button>
             </li>
           </Link>
@@ -94,7 +94,7 @@ function LeftToolBar() {
                 <span>
                   <HelpOutlineIcon className="HelpOutIcon mr-2" />
                 </span>
-                <span>Ayuda</span>
+                <span class="texto-leftnav">Ayuda</span>
               </button>
             </li>
           </Link>

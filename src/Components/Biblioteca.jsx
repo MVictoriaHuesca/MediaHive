@@ -83,7 +83,7 @@ function Biblioteca() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '6adaeb3733msh28bad337ffcb004p16abdajsn136b9a1b8458',
+            'X-RapidAPI-Key': '733197fdcamsh9fd898d4b4b0d10p1493cdjsn7aa3fb3dcb4d',
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
@@ -132,7 +132,7 @@ return (
                                         {canciones.slice(i * 3, i * 3 + 3).map((cancion, index) => (
                                             <div className="col-12 col-sm-6 col-md-4 d-flex flex-column justify-content-center align-items-center" key={index}>
                                                 <Link to={`/cancion/${cancion.id}`} style={{ textDecoration: 'none', textAlign: 'center' }}>
-                                                    <img src={cancion.imagen} className="img-fluid" style={{ maxWidth: '180px', maxHeight: '180px' }} />
+                                                    <img src={cancion.imagen} className="img-fluid" alt={cancion.titulo} style={{ maxWidth: '180px', maxHeight: '180px' }} />
                                                     <h5 style={{ color: 'black' }}>{cancion.titulo}</h5>
                                                 </Link>
                                             </div>

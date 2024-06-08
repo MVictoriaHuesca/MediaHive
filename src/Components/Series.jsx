@@ -139,26 +139,19 @@ function Series({ cambiarTituloPagina }) {
       {/*Formulario para buscar series*/}
       <br />
       <form onSubmit={searchSeries} className="formulario d-flex p-12" style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <input type="text" onChange={e => setSearchKey(e.target.value)} alt={"Buscador de series"} style={{
+        <label htmlFor="search" className="visually-hidden">Buscar serie</label>
+        <input id="search" type="text" onChange={e => setSearchKey(e.target.value)} alt={"Buscador de series"} style={{
           padding: '10px',
           borderRadius: '5px',
           border: '2px solid #ccc',
           marginRight: '10px',
           fontSize: '16px',
           outline: 'none',
+          width: '50%',
         }}
           placeholder="Buscar serie..."
         />
-        <button type="submit" alt={"Buscar Serie"} style={{
-          padding: '10px 20px',
-          borderRadius: '5px',
-          border: 'none',
-          backgroundColor: '#455559',
-          color: 'white',
-          fontSize: '16px',
-          cursor: 'pointer',
-          transition: 'background-color 0.3s',
-        }}
+        <button type="submit" alt={"Buscar Serie"} class="boton-buscar-serie"
         >Buscar</button>
       </form>
       <br />

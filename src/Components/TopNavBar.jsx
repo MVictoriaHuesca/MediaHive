@@ -23,8 +23,8 @@ function TopNavBar(props){
                                 <img src={profileImage} className="imagenPerfil-topnav"/>  
                             ) : (
                                 <AccountBoxIcon style={{fill: "white",
-                                                        width: '6.5vh',
-                                                        height: '6.5vh',
+                                                        width: '4vh',
+                                                        height: '4vh',
                                                         marginTop: '0.5vh',
                                                         }}
                                 />

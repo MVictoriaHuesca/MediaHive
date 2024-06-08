@@ -29,7 +29,7 @@ function MusicaResultados() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '6adaeb3733msh28bad337ffcb004p16abdajsn136b9a1b8458',
+      'X-RapidAPI-Key': '733197fdcamsh9fd898d4b4b0d10p1493cdjsn7aa3fb3dcb4d',
       'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
     }
   };
@@ -59,6 +59,7 @@ function MusicaResultados() {
     <br/>
       {/*Barra de buscador*/}
       <form onSubmit={handleSearch} className="formulario" style={{display:'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <label htmlFor="search" className="visually-hidden">Buscar canción</label>
         <input type="text" value={cancion} onChange={e => setCancion(e.target.value)} style={{
           padding: '10px',
           borderRadius: '5px',

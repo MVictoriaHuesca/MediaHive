@@ -1,7 +1,6 @@
 #peliculas {
-  margin-top: 4.8rem;
+  margin-top: 11vh;
   margin-left: 6.2rem;
-  /*background-color: #E3E9EA;*/
   z-index: -1;
 }
 
@@ -60,3 +59,21 @@
 .formulario {
   margin-top: 2vh;
 }
+
+.boton-buscar-pelicula {
+
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #455559;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 4vh;
+  width: 7vh;
+}
+
+.boton-buscar-pelicula:hover {
+background-color: #3e494c;
+}
+

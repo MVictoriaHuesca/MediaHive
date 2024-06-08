@@ -41,16 +41,17 @@ function CrearCuenta() {
         <h1 style={{fontWeight: 'bold'}}>Crear cuenta nueva</h1>
           <form onSubmit={ onSubmit } className="form-container">
             <div class="info-crearcuenta">
-              <label htmlFor="nombreUsuario" className="label-crear-cuenta">Nombre de usuario</label>
+              <label htmlFor="nombreUsuario" className="label-crear-cuenta" style={{marginTop:'1.5vh', marginLeft:'-5px'}}>Nombre de usuario</label>
               <span class="info-crearcuenta">(Entre 4 y 30 caracteres)</span>
             </div>
             <input
+              id="nombreUsuario"
               type="text"
               name="nombreUsuario"
               {...register("nombreUsuario", { 
                 required: {
                   value: true, 
-                  message: 'Nombre de usuario obligatorio'
+                  message: 'Este campo es obligatorio'
                 },
                 maxLength: {
                   value: 30,
@@ -66,14 +67,15 @@ function CrearCuenta() {
             {
               errors.nombreUsuario && <span className='span-crearcuenta'>{errors.nombreUsuario.message}</span>
             }
-            <label htmlFor="correoElectronico" className="label-crear-cuenta">Correo electrónico</  label>
+            <label htmlFor="correoElectronico" className="label-crear-cuenta" >Correo electrónico</  label>
             <input
+              id="correoElectronico"
               type="email"
               name="correoElectronico"
               {...register("correoElectronico", { 
                 required: {
                   value: true,
-                  message: 'Correo electrónico obligatorio'
+                  message: 'Este campo es obligatorio'
                 },
                 pattern: {
                   value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -85,17 +87,19 @@ function CrearCuenta() {
             {
               errors.correoElectronico && <span className='span-crearcuenta'>{errors.correoElectronico.message}</span>
             }
+          
             <div class="inline-crearcuenta">
               <label htmlFor="contrasena" className="label-contraseña">Contraseña</label>
-              <span class="info-crearcuenta">(Entre 4 y 30 caracteres)</span>
+              <span class="info-crearcuenta" style={{marginTop:'1.5vh'}}> (Entre 4 y 30 caracteres)</span>
             </div>
             <input
+              id="contrasena"
               type="password"
               name="contrasena"
               {...register("contrasena", { 
                 required: {
                   value: true, 
-                  message: 'Contraseña obligatoria'
+                  message: 'Este campo es obligatorio'
                },
                minLength: {
                  value: 4,

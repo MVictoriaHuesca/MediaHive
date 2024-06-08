@@ -1,8 +1,15 @@
 .container-menu {
-  margin-top: 4.8rem;
+  font-family: 'livvic';
+  margin-top: 11vh;
   margin-left: 6.2rem;
   width: calc(100% - 6.2rem);
-  overflow-y: auto;
+  height: 100%
+}
+
+.container-sugerencia{
+  margin-left: 3vh;
+  margin-top: 3vh;
+  height: 40vh;
 }
 
 .items {
@@ -37,8 +44,4 @@
   }
   .mb-0 > a[aria-expanded="true"]:after {
     content: "\f077"; /* fa-chevron-up */
-  }
-
-  .items.accordion.accordion-flush {
-    
   }

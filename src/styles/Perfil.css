@@ -8,7 +8,7 @@
     margin-top: 4.8rem;
     margin-left: 6.2rem;
     width: calc(100% - 6.3rem);
-    height: calc(100vh - 13vh);
+    height: 91vh;
     background-color: #F5F5F5;
     overflow: hidden;
 }
@@ -22,7 +22,7 @@
     justify-content: center;
     width: 50%;
     max-width: 600px;
-    height: 90%;
+    height: 65%;
     background-color: #78939878;
     border-radius: 45px;
     padding: 2.5rem;
@@ -83,23 +83,25 @@
 
 /* Botones */
 .boton-guardar-perfil {
-    width: 26vh;
-    height: 2rem;
-    background-color: #009f04;
+    width: 20vh;
+    height: 5vh;
+    background-color: #085F0C;
     border-radius: 10px;
     border: solid 1px #067509;
+    margin-top:1vh;
     color: white;
-    font-size: 3vh;
+    font-size: 1.7vh;
 }
 
 .boton-cerrar-sesion-perfil {
-    width: 20vh;
-    height: 2rem;
+    width: 13vh;
+    height: 5vh;
+    margin-top:1vh;
     border-radius: 10px;
     background-color: #5d777d;
     color: white;
     border: solid 1px #50646a;
-    font-size: 3vh;
+    font-size: 1.7vh;
 }
 
 .boton-eliminarImagen-perfil {

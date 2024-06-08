@@ -81,33 +81,33 @@ function MyVerticallyCenteredModal(props) {
     return (
         <Modal
             {...props}
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    ¡Debes iniciar sesión para añadir un comentario!
+            <Modal.Header closeButton style={{ paddingBottom: '1vh' }}>
+
+                <Modal.Title id="contained-modal-title-vcenter" style={{ fontSize: '18px', padding: '0', fontWeight: 'bold' }}>
+                    ¡Debes iniciar sesión para enviar una sugerencia!
                 </Modal.Title>
+
             </Modal.Header>
-            <Modal.Body>
-                <h4>Inicia sesión en tu cuenta o crea una nueva para añadir comentarios</h4>
-                <div>
-                    <h5>
-                        <Link to="/CrearCuenta">
-                            <Button className="registro-cancion" >Registrarse</Button>
-                        </Link>
-                    </h5>
-                    <h5>
-                        <Link to="/InicioSesion">
-                            <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
-                        </Link>
-                    </h5>
+            <Modal.Body style={{ paddingTop: '1vh' }}>
+                <p style={{ marginBottom: '2vh', }}>Inicia sesión o crea una cuenta nueva para enviar una sugerencia: </p>
+                <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                    <Link to="/CrearCuenta">
+                        <Button className="registro-cancion" style={{ marginLeft: '2vh' }}>Registrarse</Button>
+                    </Link>
+                    <Link to="/InicioSesion">
+                        <Button className="inicioSesion-cancion" >Iniciar Sesion</Button>
+                    </Link>
                 </div>
             </Modal.Body>
-            <Modal.Footer>
-                <Button onClick={props.onHide}>Cerrar</Button>
+
+            <Modal.Footer style={{ padding: '0', height: '1px' }}>
+                ´{/*<Button onClick={props.onHide} class="cerrar-cancion">Cerrar</Button>*/}
             </Modal.Footer>
+
         </Modal>
     );
 }
@@ -144,9 +144,10 @@ function Ayuda() {
     const [show, setShow] = useState(false);
     const target = useRef(null);
 
-{/*------------------------------------------------QUIENES-SOMOS--------------------------------------------------------------- */ }
+    {/*------------------------------------------------QUIENES-SOMOS--------------------------------------------------------------- */ }
     return (
         <div class="container-menu">
+            <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'></link>
             <Accordion defaultActiveKey="0" flush className="items">
                 <Accordion.Item eventKey="1" className="quienes-somos">
                     <Accordion.Header>
@@ -164,7 +165,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------MUSICA--------------------------------------------------------------- */}
+                {/*------------------------------------------------MUSICA--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="2" className="musica">
                     <Accordion.Header>
@@ -190,7 +191,7 @@ function Ayuda() {
                                                 <img src={barranav} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda barra de búsqueda de cancion"/>
                                                 En la barra de navegación podrás buscar la canción que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -202,7 +203,7 @@ function Ayuda() {
                                                 <img src={Ultimosestrenos} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda últimos estrenos de canciones"/>
                                                 Aquí podrás descubrir las últimas canciones que se han lanzado.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -214,7 +215,7 @@ function Ayuda() {
                                                 <img src={Maspopulares} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda canciones más escuchadas"/>
                                                 Aquí podrás ver las canciones más escuchadas del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -226,7 +227,7 @@ function Ayuda() {
                                                 <img src={Top10} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda top 10 canciones más escuchadas"/>
                                                 Aquí podrás ver las 10 canciones más escuchadas en España.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -248,7 +249,7 @@ function Ayuda() {
                                                 <img src={resultados} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda resultados buscar canción"/>
                                                 <strong>1.</strong> Cuando buscas el título de una canción, aparecerán los resultados de la búsqueda.
                                                 El primer resultado será la canción que buscas, y los demás serán canciones relacionadas.<br />
                                                 <strong>2.</strong> Puedes escuchar la canción online o abrirla en Spotify.<br />
@@ -262,7 +263,7 @@ function Ayuda() {
                                                 <img src={artista} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda resultados buscar artista"/>
                                                 Cuando buscas un artista, aparecerán sus canciones más populares y podrás escucharlas online o abrirlas en Spotify.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -283,7 +284,7 @@ function Ayuda() {
                                                 <img src={reproductor} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda reproductor online"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
@@ -294,7 +295,7 @@ function Ayuda() {
                                                 <img src={titulo} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda título canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
@@ -305,7 +306,7 @@ function Ayuda() {
                                                 <img src={artis} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda imagen artista"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
@@ -316,7 +317,7 @@ function Ayuda() {
                                                 <img src={valorar} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda valorar canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="5">
@@ -327,7 +328,7 @@ function Ayuda() {
                                                 <img src={favoritos} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda guardar en biblioteca canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
@@ -338,7 +339,7 @@ function Ayuda() {
                                                 <img src={comentarios} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda escribir comentarios en una canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="7">
@@ -349,7 +350,7 @@ function Ayuda() {
                                                 <img src={vercomentarios} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda ver comentarios canción"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -359,7 +360,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------PELICULAS--------------------------------------------------------------- */}
+                {/*------------------------------------------------PELICULAS--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="3" className="peliculas">
                     <Accordion.Header>
@@ -384,7 +385,7 @@ function Ayuda() {
                                                 <img src={barranavpelis} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda barra de búsqueda película"/>
                                                 En la barra de navegación podrás buscar la película que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -396,7 +397,7 @@ function Ayuda() {
                                                 <img src={popu} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda películas populares"/>
                                                 Aquí podrás descubrir las últimas películas más populares del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -408,7 +409,7 @@ function Ayuda() {
                                                 <img src={top} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda top 10 películas"/>
                                                 Aquí podrás ver un top de películas.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -420,7 +421,7 @@ function Ayuda() {
                                                 <img src={guardadas} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda películas guardadas en biblioteca"/>
                                                 Aquí podrás ver las películas que has guardado en favoritos.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -432,7 +433,7 @@ function Ayuda() {
                                                 <img src={estrenos} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda últimos estrenos de películas"/>
                                                 Aquí podrás ver las películas que se han estrenado recientemente.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -454,7 +455,7 @@ function Ayuda() {
                                                 <img src={resultadopeli} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda resultados buscar películas"/>
                                                 Cuando buscas el título de una película, aparecerán los resultados de la búsqueda.
                                                 Aparecerán varias portadas de títulos relacionados.<br />
                                             </Accordion.Body>
@@ -476,7 +477,7 @@ function Ayuda() {
                                                 <img src={portadapeli} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda portada película "/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
@@ -487,7 +488,7 @@ function Ayuda() {
                                                 <img src={titulopeli} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda título película"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
@@ -498,7 +499,7 @@ function Ayuda() {
                                                 <img src={pelisimilares} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda películas similares"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
@@ -509,7 +510,7 @@ function Ayuda() {
                                                 <img src={sinopsis} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda sinopsis película"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="5">
@@ -520,7 +521,7 @@ function Ayuda() {
                                                 <img src={fav} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda guardar película en biblioteca"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
@@ -531,7 +532,7 @@ function Ayuda() {
                                                 <img src={coment} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda escribir comentario de una película"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="7">
@@ -542,7 +543,7 @@ function Ayuda() {
                                                 <img src={coment2} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda ver comentarios de una pleícula"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -552,7 +553,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------SERIES--------------------------------------------------------------- */}
+                {/*------------------------------------------------SERIES--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="4" className="series">
                     <Accordion.Header>
@@ -577,7 +578,7 @@ function Ayuda() {
                                                 <img src={barranavseries} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda barra de búsqueda de una serie"/>
                                                 En la barra de navegación podrás buscar la serie que desees.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -589,7 +590,7 @@ function Ayuda() {
                                                 <img src={popul} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series populares"/>
                                                 Aquí podrás descubrir las últimas series más populares del momento.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -601,7 +602,7 @@ function Ayuda() {
                                                 <img src={top10s} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda top series"/>
                                                 Aquí podrás ver un top de series.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -613,7 +614,7 @@ function Ayuda() {
                                                 <img src={guardadas} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series guardadas"/>
                                                 Aquí podrás ver las series que has guardado en favoritos.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -625,7 +626,7 @@ function Ayuda() {
                                                 <img src={emision} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series en emisión"/>
                                                 Aquí podrás ver las series que están en emisión actualmente.
                                             </Accordion.Body>
                                         </Accordion.Item>
@@ -647,7 +648,7 @@ function Ayuda() {
                                                 <img src={result} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda buscar título serie"/>
                                                 Cuando buscas el título de una serie, aparecerán los resultados de la búsqueda.
                                                 Aparecerán varias portadas de títulos relacionados.<br />
                                             </Accordion.Body>
@@ -669,7 +670,7 @@ function Ayuda() {
                                                 <img src={portadaser} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda portada serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
@@ -680,7 +681,7 @@ function Ayuda() {
                                                 <img src={nombre} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda título de serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
@@ -691,7 +692,7 @@ function Ayuda() {
                                                 <img src={simil} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda series similares"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
@@ -702,7 +703,7 @@ function Ayuda() {
                                                 <img src={sinop} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda sinopsis de una serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="5">
@@ -713,7 +714,7 @@ function Ayuda() {
                                                 <img src={favor} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="guardar serie en biblioteca"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="6">
@@ -724,7 +725,7 @@ function Ayuda() {
                                                 <img src={escribir} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda escribir comentario en una serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="7">
@@ -735,7 +736,7 @@ function Ayuda() {
                                                 <img src={ver} style={{
                                                     width: '1000px', height: '500px',
                                                     display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                                }} />
+                                                }} alt="ayuda ver comentarios de una serie"/>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -745,7 +746,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------BIBLIOTECA--------------------------------------------------------------- */}
+                {/*------------------------------------------------BIBLIOTECA--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="5" className="biblioteca">
                     <Accordion.Header>
@@ -764,7 +765,7 @@ function Ayuda() {
                                         <img src={canciones} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda canciones guardadas en biblioteca"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -777,7 +778,7 @@ function Ayuda() {
                                         <img src={pelis} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda películas guardadas en biblioteca"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -790,7 +791,7 @@ function Ayuda() {
                                         <img src={series} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda series guardadas en biblioteca"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -798,7 +799,7 @@ function Ayuda() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-{/*------------------------------------------------PERFIL--------------------------------------------------------------- */}
+                {/*------------------------------------------------PERFIL--------------------------------------------------------------- */}
 
                 <Accordion.Item eventKey="6" className="perfil">
                     <Accordion.Header>
@@ -832,7 +833,7 @@ function Ayuda() {
                                         <img src={elegir} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda cambiar foto de perfil" />
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -845,7 +846,7 @@ function Ayuda() {
                                         <img src={elim} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda eliminar foto de perfil"/>
                                         Esta acción deja a tu foto de perfil en blanco.<br />
                                     </Accordion>
                                 </Accordion.Body>
@@ -859,7 +860,7 @@ function Ayuda() {
                                         <img src={nom} style={{
                                             width: '1000px', height: '500px',
                                             display: 'flex', marginLeft: '1rem', marginBottom: '25px'
-                                        }} />
+                                        }} alt="ayuda cambiar nobre de usuario"/>
                                     </Accordion>
                                 </Accordion.Body>
                             </Accordion.Item>
@@ -868,53 +869,49 @@ function Ayuda() {
                 </Accordion.Item>
             </Accordion>
 
-{/*------------------------------------------------SUGERENCIAS--------------------------------------------------------------- */}
+            {/*------------------------------------------------SUGERENCIAS--------------------------------------------------------------- */}
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-3">
-                        <span><br></br></span>
-                        <h2>¿Te gustaría enviarnos una sugerencia?</h2>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="UserInputContainer">
-                            {/* Cuadro de texto para la opinión del usuario */}
-                            <textarea
-                                placeholder="Escribe tu sugerencia aquí..."
-                                value={userComment}
-                                onChange={handleUserCommentChange}
-                                className="UserOpinion"
-                                style={{ width: '100%', height: '100px' }}
-                            />
-                            {/* Botón para añadir comentario */}
+            <div className="container-sugerencia">
 
-                        </div>
-                        {usuario ? (
-                            <>
-                                <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: 'blue', color: 'white' }} ref={target} onClick={() => { handleUserCommentSubmit(); setShow(!show) }}>
-                                    Enviar sugerencia
-                                </Button>
-                                <Overlay target={target.current} show={show} placement="right">
-                                    {(props) => (
-                                        <Tooltip id="overlay-example" {...props}>
-                                            ¡Gracias!
-                                        </Tooltip>
-                                    )}
-                                </Overlay>
-                            </>
-                        ) : (
-                            <>
-                                <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: 'blue', color: 'white' }} onClick={() => setModalShow(true)} >
-                                    Enviar sugerencia
-                                </Button>
-                                <MyVerticallyCenteredModal
-                                    show={modalShow}
-                                    onHide={() => setModalShow(false)}
-                                />
-                            </>
-                        )}
-                    </div>
+            <label htmlFor="sugerencia"><h2 style={{marginLeft: '2vh', marginTop: '12vh', marginBottom:'3vh'}}>¿Te gustaría enviarnos una sugerencia?</h2></label>
+                <div>
+                    {/* Cuadro de texto para la opinión del usuario */}
+                    
+                    <textarea
+                        id="sugerencia"
+                        placeholder="Escribe tu sugerencia aquí..."
+                        value={userComment}
+                        onChange={handleUserCommentChange}
+                        className="UserOpinion"
+                        style={{ width: '40%', height: '18vh', marginLeft: '2vh', marginBottom: '1.5vh' }}
+                    />
+                    {/* Botón para añadir comentario */}
+
                 </div>
+                {usuario ? (
+                    <>
+                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', marginLeft:'2vh', marginBottom:'3vh' }} ref={target} onClick={() => { handleUserCommentSubmit(); setShow(!show) }} >
+                            Enviar sugerencia
+                        </Button>
+                        <Overlay target={target.current} show={show} placement="right">
+                            {(props) => (
+                                <Tooltip id="overlay-example" {...props}>
+                                    ¡Gracias!
+                                </Tooltip>
+                            )}
+                        </Overlay>
+                    </>
+                ) : (
+                    <>
+                        <Button alt="Enviar sugerencia" variant="contained" color="primary" className="CommentButton" style={{ backgroundColor: '#085F0C', color: 'white', marginLeft:'2vh', marginBottom:'3vh' }} onClick={() => setModalShow(true)} >
+                            Enviar sugerencia
+                        </Button>
+                        <MyVerticallyCenteredModal
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        />
+                    </>
+                )}
             </div>
         </div>
     );

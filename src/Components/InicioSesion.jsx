@@ -45,13 +45,13 @@ const InicioSesion = () => {
         }
 
         if (!values.email) {
-            errors.email = <span className="error-message">No puede estar en blanco</span>;
+            errors.email = <span className="error-message">Este campo es obligatorio</span>;
         } else if (!regex.test(values.email)) {
             errors.email = <span className="error-message">Formato de correo electrónico no válido</span>;
         }
 
         if (!values.password) {
-            errors.password = <span className="error-message">No puede estar en blanco</span>;
+            errors.password = <span className="error-message">Este campo es obligatorio</span>;
         } else if (values.password.length < 4) {
             errors.password = <span className="error-message">La contraseña debe tener más de 4 caracteres</span>;
         }
@@ -66,37 +66,37 @@ const InicioSesion = () => {
     }, [formErrors]);
 
     return (
-        <div className="container" id="inicioSesioncontainer">
+        <div id="inicioSesioncontainer">
             <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'></link>
             <div className="form-container-iniciosesion">
-                <h1>Inicio de sesión</h1>
+                <h1 style={{ fontWeight: 'bold', alignSelf:'center' }}>Inicio de sesión</h1>
                 {Object.keys(formErrors).length === 0 && isSubmitting && (
                     <span>Formulario enviado con éxito</span>
                 )}
                 <form onSubmit={handleSubmit} noValidate>
-                    <div>
-                        <label htmlFor="email">Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            value={formValues.email}
-                            onChange={handleChange}
-                        />
-                        {formErrors.email && <span className="error-message">{formErrors.email}</span>}
-                    </div>
-                    <div>
-                        <label htmlFor="password">Contraseña</label>
-                        <input
-                            type="password"
-                            name="password"
-                            id="password"
-                            value={formValues.password}
-                            onChange={handleChange}
-                        />
-                        {formErrors.password && <span className="error-message">{formErrors.password}</span>}
-                    </div>
-                    <button type="submit">Iniciar Sesión</button>
+
+                    <label htmlFor="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        value={formValues.email}
+                        onChange={handleChange}
+                    />
+                    {formErrors.email && <span className="error-message">{formErrors.email}</span>}
+
+
+                    <label htmlFor="password">Contraseña</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        value={formValues.password}
+                        onChange={handleChange}
+                    />
+                    {formErrors.password && <span className="error-message">{formErrors.password}</span>}
+
+                    <button type="submit">Aceptar</button>
                 </form>
             </div>
         </div>

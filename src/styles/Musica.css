@@ -5,8 +5,8 @@
 
 }
 
-.pantalla{
-  margin-top: 10vh;
+#musica{
+  margin-top: 11.5vh;
   margin-left: 6.3rem;
   width: calc(100% - 7.1rem);
   /*background-color: #E3E9EA;*/
@@ -55,7 +55,8 @@ a.carousel-control-next {
   color: black;
 }
 
-#boton-buscar-musica {
+.boton-buscar-musica {
+
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -63,8 +64,20 @@ a.carousel-control-next {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    height: 4vh;
+    width: 7vh;
 }
 
-#boton-buscar-musica:hover {
-  background-color: #373f42;
+.boton-buscar-musica:hover {
+  background-color: #3e494c;
+}
+
+#barra-busqueda-musica{
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+.seccion-musica {
+  margin-bottom: 1.5vh;
+  margin-top: 1.5vh;
 }

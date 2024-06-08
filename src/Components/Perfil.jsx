@@ -56,7 +56,7 @@ function Perfil() {
                     {perfilURLTemp !== '' ? <img src={perfilURLTemp} alt="Foto de perfil" className="perfil-image" /> : <AccountBoxIcon style={{ fill: "white" }} class="perfil-image"/>}
                     <div className="inline-group">
                         <label htmlFor="profile-image" className="label-perfil">Seleccionar nueva imagen de perfil:</label>
-                        <input type="file" onChange={handleChange} className="seleccionar-imagen-perfil"/>
+                        <input type="file" onChange={handleChange} className="seleccionar-imagen-perfil" id="profile-image"/>
                     </div>
 
                     <div className="inline-group">
