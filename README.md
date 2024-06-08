@@ -63,14 +63,10 @@
 <p>Clona este repositorio en tu máquina local si aún no lo has hecho:</p>
 <pre><code>git clone https://github.com/ClementeCano03/MediaHive </code></pre>
 <pre><code>cd MediaHive </code></pre>
-<h3>2. Navegar al Directorio del Proyecto</h3>
-<p>Accede al directorio donde se encuentra el código fuente de la aplicación. En este caso, debes ejecutar los siguientes comandos en la terminal de Visual Studio Code:</p>
-<pre><code>cd MediaHive_code</code></pre>
-<pre><code>cd MediaHive</code></pre>
-<h3>3. Instalar Dependencias</h3>
+<h3>2. Instalar Dependencias</h3>
 <p>Antes de iniciar la aplicación, asegúrate de que todas las dependencias están instaladas. Ejecuta el siguiente comando en el directorio <code>MediaHive</code>:</p>
 <pre><code>npm install</code></pre>
-<h3>4. Iniciar el Servidor de Desarrollo</h3>
+<h3>3. Iniciar el Servidor de Desarrollo</h3>
 <p>Para desplegar la aplicación localmente, utiliza el siguiente comando:</p>
 <pre><code>npm run dev</code></pre>
 <p>Este comando iniciará el servidor de desarrollo utilizando Vite. La salida esperada debería ser algo similar a:</p>
@@ -81,7 +77,7 @@ VITE v5.2.11  ready in 3934 ms
 ➜  Local:   http://localhost:5173/
 ➜  Network: use --host to expose
 ➜  press h + enter to show help</code></pre>
-<h3>5. Acceder a la Aplicación</h3>
+<h3>4. Acceder a la Aplicación</h3>
 <p>Abre tu navegador web y navega a la siguiente URL para ver la aplicación en funcionamiento:</p>
 <pre><code>http://localhost:5173/</code></pre>
 <h3>Notas Adicionales</h3>
