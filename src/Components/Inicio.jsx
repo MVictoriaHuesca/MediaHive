@@ -23,7 +23,7 @@ function Inicio() {
                     <></>
                 ) : (
                   <Link to="/CrearCuenta">
-                    <button className="registro">Crear Cuenta Nueva</button>
+                    <button className="registro">Crear Nueva Cuenta</button>
                   </Link>
                 )}
             
