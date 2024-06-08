@@ -16,7 +16,7 @@ function Inicio() {
               <p class="text-wrap">
                   Organiza tus series, películas o música favoritos en un solo lugar de forma sencilla. <br></br>
                   Descubre cuáles son los contenidos en tendencia y vota por tu contenido favorito. <br></br>
-                  Debate en los diversos foros el últmo capítulo de tu serie en emisión. <br></br>
+                  Debate en los diversos foros el último capítulo de tu serie en emisión. <br></br>
               </p>
           </div>
           {username ? (
