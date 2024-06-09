@@ -1,8 +1,7 @@
-.parent-container-resultadosmusica {
-  margin-top: 3vh;
+.parent-container-musicaresultados{
+  margin-top: 11.5vh;
   margin-left: 6.3rem;
   width: calc(100% - 6.8rem);
-
 }
 
 #musica{
