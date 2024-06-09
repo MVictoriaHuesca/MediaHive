@@ -29,7 +29,7 @@ function MusicaResultados() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '733197fdcamsh9fd898d4b4b0d10p1493cdjsn7aa3fb3dcb4d',
+      'X-RapidAPI-Key': '59e08d2b29msh12d99d5d3d08e7dp1ad517jsn55a55d7a39b8',
       'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
     }
   };

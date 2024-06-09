@@ -154,7 +154,7 @@ function Cancion() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'a8e49a3adcmsh7aab7090d88bff5p17d687jsn80c93f71f7e8',
+      'X-RapidAPI-Key': '59e08d2b29msh12d99d5d3d08e7dp1ad517jsn55a55d7a39b8',
       'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
     }
   };
